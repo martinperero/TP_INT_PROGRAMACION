@@ -1,0 +1,27 @@
+* {
+    margin: 0;
+    padding: 0; 
+    box-sizing: border-box;
+}
+
+nav {
+    float: right;
+}
+
+ul li {
+	display: inline;
+}
+
+ul li a {
+	text-decoration: none;
+	display: inline-block;
+    padding: 20px;
+    font-size: 20px;
+    border-radius: 3%;
+    color: #000000;
+    background-color:whitesmoke;
+}
+
+ul li a:hover {
+    background-color: aqua;
+}
