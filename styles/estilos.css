@@ -14,7 +14,7 @@ header{
     align-items: center;
 }
 div.logo{
-    width: 15%;
+    width: 10%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -22,7 +22,7 @@ div.logo{
 }
 img#logo{
     width: 100%;
-    max-height: 5rem;
+    height: auto;
     margin: 0;
     padding: 1%;
 }
