@@ -1,0 +1,1 @@
+//Insertar contenido dinámico en otras paginas del sitio
