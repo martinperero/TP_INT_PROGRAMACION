@@ -49,6 +49,44 @@ header ul li a:hover {
     transform: scale(1.2);
 }
 
+#inicio{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-image: url(../media/imagen_fondo_inicio.jpg);
+    background-color: rgba(193, 193, 248, 0.4);
+    background-blend-mode: overlay;
+    background-size: cover;
+    background-position: center;
+    height: 500px;
+}
+
+#inicio h1 {
+    font-size: 2.5rem;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    margin: 1rem;
+    padding: 1rem;
+}
+
+#inicio p {
+    font-size: 1.6rem;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    margin: 1rem;
+    padding: 1rem;
+    line-height: 1rem;
+}
+
+#fondo_letras{
+    background-color: rgba(193, 193, 248, 0.6);
+    background-blend-mode: overlay;
+    padding: 1rem;
+    border-radius: 5px;
+    width: 80%;
+}
+
 footer{
     margin: auto;
     padding: 2%;
