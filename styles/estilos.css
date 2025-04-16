@@ -54,8 +54,6 @@ footer{
     padding: 2%;
     background-color: rgb(59, 59, 59);
     align-items: center;
-    position: fixed;
-    bottom: 0;
 }
 footer div.logo{
     width: 30%;
