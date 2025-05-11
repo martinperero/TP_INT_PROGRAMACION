@@ -2,12 +2,24 @@
     width: 90%;
     margin: 1rem 1rem;
 }
+.card.color_card{
+    background-color: rgba(193, 193, 248, 0.5);
+    border-width: 0.5rem;
+    box-shadow: blueviolet 0 0 0.5rem;
+}
 .card .boton_card{
     margin: 1% 1%;
+    background-color: rgb(193, 193, 248);
+    color: rgb(0, 0, 0);
+    border-color: rgb(193, 193, 248);
 }
 .card .boton_card:hover{
-    background-color: #838bc1;
-    color: black;
+    background-color: rgb(193, 193, 248);
+    font-weight: bold;
+    color: rgb(0, 0, 0);
+    transform: scale(1.1);
+        box-shadow: blueviolet 0 0 0.5rem;
+
 }
 
 
