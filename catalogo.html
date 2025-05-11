@@ -1,14 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="styles/estilos.css">
     <link rel="stylesheet" href="styles/catalogo.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
     <title>IDW SA</title>
 </head>
+
 <body id="body">
-    <header class="container" id="header">
+    <header class="container" id="header" style="display:none">
         <div class="logo">
             <img id="logo" src="media/logoIDW.png" alt="Logo de la empresa">
         </div>
@@ -35,11 +39,74 @@
             </ul>
         </nav>
     </header>
-    <footer class="container" id="footer">
+    <main class="container-fluid py-5" id="main">
+        <section class="row justify-content-center">
+            <div class="row">
+                <h2 class="text-center">Bienvenido a nuestro catálogo de salones</h2>
+                <div class="col-12 text-justify mb-4">
+
+                    <p class="lead"></p>En él encontrarás todas las opciones que tenemos para ofrerte, adaptándonos a
+                    tus necesidades y expectativas.</p>
+                    <p>Seleccioná el salón de tu interés para descubrir todas sus caracteristicas y posibilidades. <br>
+                        Dentro de cada sección encontrarás la descripción completa y tendrás la posibilidad de realizar
+                        un presupuesto adaptando los servicios que quieras segun tus preferencias.</p>
+                </div>
+            </div>
+            <div class="col-10 col-md-8 col-lg-6">
+            </div>
+            </div>
+        </section>
+        <section class="row justify-content-center">
+            <div class="col-10 col-md-8 col-lg-6">
+                <div id="gametime_cardsm" class="d-block d-sm-block d-md-none card h-100">
+                    <img id="gametime_imgsm" src="media/media_salones/GAMETIME.png" class="card-img-top ms-sm-2 me-sm-2"
+                        alt="imagen de gametime">
+                    <div class="card-body text-justify">
+                        <h3 class="card-title text-center">Gametime</h3>
+                        <h5 class="card-body text-center">Juegos y entretenimiento</h5>
+                        <p>En gametime nos especializamos en juegos y tecnologia, por eso te ofrecemos las mejores
+                            opciones en consolas del mercado, y mucho más. <br>Vení a visitarnos y descubrí todo lo que
+                            tenemos para ofrecerte.
+                        </p>
+                    </div>
+                    <div><button type="button" class="boton_card btn btn-primary ">Más info...</button>
+                    </div>
+                </div>
+            </div>
+            <div id="gametime_card" class=" col-10 col-md-8 col-lg-6">
+                <div id="gametime" class="d-none d-md-block card h-100">
+                    <img id="gametime_img" src="media/media_salones/GAMETIME.png" class="card-img-top ms-sm-2 me-sm-2"
+                        alt="imagen de gametime">
+                    <div class="card-body text-center">
+                        <h3 class="card-title text-center">Gametime</h3>
+                        <h5 class="card-body text_center">Juegos y entretenimiento</h5>
+                        <p>En gametime nos especializamos en juegos y tecnologia, por eso te ofrecemos las mejores
+                            opciones en consolas del mercado:
+                        </p>
+                        <ul>
+                            <li>PlayStation 5</li>
+                            <li>PlayStation 4</li>
+                            <li>Xbox Series X</li>
+                            <li>Xbox One</li>
+                            <li>Meta quest</li>
+                        </ul>
+                        <p>Y mucho más....
+                            Contamos con un amplio catalogo de juegos para todas las consolas y para todas las edades.
+                            Además, ofrecemos una gran variedad de accesorios y periféricos para mejorar tu experiencia
+                            de juego. <br>
+                            Vení a visitarnos y descubrí todo lo que tenemos para ofrecerte
+                        </p>
+                    </div>
+                    <button type="button" class="btn btn-primary boton_card">Más info...</button>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="container" id="footer" style="display:none">
         <div class="logo">
             <img id="logofooter" src="media/logoIDW.png" alt="logo de la empresa">
         </div>
-        <div id= "footerenlaces">
+        <div id="footerenlaces">
             <ul class="ulfooter">
                 <li>
                     <a class="linkfooter" href="index.html">Inicio</a>
@@ -68,5 +135,9 @@
         </div>
     </footer>
     <script src="scripts/scripts.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO"
+        crossorigin="anonymous"></script>
 </body>
+
 </html>

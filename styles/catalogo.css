@@ -1,4 +1,13 @@
-footer{
-    position: fixed;
-    bottom: 0;
+#gametime_img, #gametime_imgsm{
+    width: 90%;
+    margin: 1rem 1rem;
 }
+div .card .boton_card{
+    margin: 1% 1%;
+}
+div.card .boton_card:hover{
+    background-color: #838bc1;
+    color: black;
+}
+
+
