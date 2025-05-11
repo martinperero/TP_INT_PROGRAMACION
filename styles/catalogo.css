@@ -2,10 +2,10 @@
     width: 90%;
     margin: 1rem 1rem;
 }
-div .card .boton_card{
+.card .boton_card{
     margin: 1% 1%;
 }
-div.card .boton_card:hover{
+.card .boton_card:hover{
     background-color: #838bc1;
     color: black;
 }
