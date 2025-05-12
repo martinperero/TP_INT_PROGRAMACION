@@ -80,3 +80,136 @@
     color: #000000;
     margin-bottom: 20px;
 }
+
+.info-contacto .bi {
+    color: rgb(137, 137, 238); 
+    font-size: 1.2rem; 
+}
+
+
+.info-contacto .list-unstyled a {
+    color: rgb(137, 137, 238);
+    font-weight: bold;
+}
+
+
+.info-contacto .list-unstyled a:hover {
+    color: rgb(111, 111, 245); 
+    text-decoration: underline;
+}
+
+
+.info-contacto.card {
+    border: none; 
+    border-left: 3px solid rgb(137, 137, 238); 
+    border-radius: 8px;
+    margin-bottom: 0; 
+}
+
+
+.form-contacto .btn-primary {
+    background-color: rgb(137, 137, 238);
+    border-color: rgb(137, 137, 238);
+    width: 150px; 
+}
+
+.form-contacto .btn-primary:hover {
+    background-color: rgb(111, 111, 245);
+    border-color: rgb(111, 111, 245);
+}
+.main_contacto {
+    background: linear-gradient(180deg, #f8f9fa 0%, #e8e9ff 100%);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); 
+}
+
+
+.card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px); 
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+
+.info-contacto .list-unstyled li {
+    transition: background-color 0.2s ease;
+}
+
+.info-contacto .list-unstyled li:hover {
+    background-color: rgba(137, 137, 238, 0.1); 
+    border-radius: 4px;
+}
+
+.info-contacto .bi {
+    transition: transform 0.2s ease;
+}
+
+.info-contacto .list-unstyled li:hover .bi {
+    transform: scale(1.2); 
+}
+
+
+
+.alert-info {
+    background-color: rgba(137, 137, 238, 0.1);
+    border-color: rgb(137, 137, 238);
+    color: rgb(137, 137, 238);
+    font-weight: 500;
+    border-radius: 8px;
+}
+
+
+.main_contacto h2 {
+    font-weight: 700; 
+    color: rgb(50, 50, 50); 
+    position: relative;
+    display: inline-block;
+    padding-bottom: 10px;
+}
+
+.main_contacto h2::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 50px;
+    height: 3px;
+    background-color: rgb(137, 137, 238); 
+}
+
+.card-title {
+    color: rgb(50, 50, 50);
+    font-weight: 600;
+}
+
+.form-label {
+    color: rgb(137, 137, 238); 
+    font-weight: 600;
+}
+.info-contacto .bi-whatsapp {
+    color: #25D366;
+}
+.info-contacto .bi-instagram {
+    color: #E1306C;
+}
+.info-contacto .bi-facebook {
+    color: #3B5998;
+}
+.contacto-background {
+    background: linear-gradient(90deg, rgba(137, 137, 238, 0.05) 0%, #f8f9fa 50%, rgba(137, 137, 238, 0.05) 100%);
+    width: 100%;
+    padding: 40px 0;
+}
+
+@media (min-width: 1200px) {
+    .main_contacto {
+        max-width: 1100px;
+    }
+}
+.info-contacto .no-link-style {
+    color: #000000; 
+    font-weight: bold;
+}
