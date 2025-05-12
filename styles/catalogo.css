@@ -1,3 +1,10 @@
+#lead{
+    width: 80%;
+    align-items: center;
+    text-align: justify;
+    font-size: 1.25rem;
+    color: rgb(0, 0, 0);
+}
 div.card.card-body{
     font-size: 0.75rem;
 }
@@ -10,11 +17,19 @@ div.card img{
     border-width: 0.5rem;
     box-shadow: blueviolet 0 0 0.5rem;
 }
-.card .boton_card{
+.card .boton_card, div.descripcion_slide .boton_card{
     margin: 1% 1%;
     background-color: rgb(193, 193, 248);
     color: rgb(0, 0, 0);
     border-color: rgb(193, 193, 248);
+}
+.card .boton_card, div.descripcion_slide .boton_card:hover{
+        background-color: rgb(193, 193, 248);
+    font-weight: bold;
+    color: rgb(0, 0, 0);
+    transform: scale(1.1);
+        box-shadow: blueviolet 0 0 0.5rem;
+
 }
 .card .boton_card:hover{
     background-color: rgb(193, 193, 248);
@@ -32,7 +47,39 @@ div.card img{
 }
 .seccion_desktop{
     display: none;
+    }
+
+#carrouselSalones{
+        width: 100%;
+        background-color: rgba(193, 193, 248, 0.5);
+        display: flex;
+        justify-content: center;
+        align-items: center;
 }
+.carousel-inner img{
+    width: 100%;
+    align-self: center;
+}
+div.carousel-inner{
+    width: 70%;
+    margin: 1rem 1rem
+}
+.label_salon{
+    text-align: center;
+}
+.label_carrousel{
+    text-align: center;
+    text-shadow: 0.5em 0.5em 0.5em rgba(193, 193, 248, 0.5);
+    font-size: 1.25rem;
+    color: rgb(0, 0, 0);
+}
+.descripcion_slide{
+    margin: 0.40rem 0.40rem;
+    padding: 0.20rem 0.20rem;
+    box-shadow: rgb(138, 43, 226);
+}
+
+
 
 @media (max-width: 719px) {
     .seccion_mobile{
@@ -43,4 +90,17 @@ div.card img{
     .seccion_tablet{
         display: block;
     }
+}
+@media (min-width: 1024px) {
+    .seccion_desktop{
+        display: block;
+    }
+    #encabezado{
+    display: flex;
+    justify-content: center;
+}
+main.container{
+    width: 80%;
+    margin: 0 auto;
+}
 }
