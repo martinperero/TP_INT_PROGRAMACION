@@ -61,7 +61,7 @@ div.card img{
     align-self: center;
 }
 div.carousel-inner{
-    width: 70%;
+    width: 60%;
     margin: 1rem 1rem
 }
 .label_salon{
@@ -100,7 +100,7 @@ div.carousel-inner{
     justify-content: center;
 }
 main.container{
-    width: 80%;
+    width: 70%;
     margin: 0 auto;
 }
 }
