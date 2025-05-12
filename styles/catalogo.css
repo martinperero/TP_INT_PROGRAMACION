@@ -1,5 +1,8 @@
+div.card.card-body{
+    font-size: 0.75rem;
+}
 div.card img{
-    width: 80%;
+    width: 60%;
     margin: 1rem 1rem;
 }
 .card.color_card{
@@ -21,5 +24,23 @@ div.card img{
         box-shadow: blueviolet 0 0 0.5rem;
 
 }
+.seccion_mobile{
+    display: none;
+}
+.seccion_tablet{
+    display: none;
+}
+.seccion_desktop{
+    display: none;
+}
 
-
+@media (max-width: 719px) {
+    .seccion_mobile{
+        display: block;
+    }
+}
+@media (min-width: 720px) and (max-width: 1023px) {
+    .seccion_tablet{
+        display: block;
+    }
+}

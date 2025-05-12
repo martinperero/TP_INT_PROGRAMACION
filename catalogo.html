@@ -11,33 +11,44 @@
     <title>IDW SA</title>
 </head>
 
-<body id="body">
-    <header class="container" id="header" style="display:none">
-        <div class="logo">
-            <img id="logo" src="media/logoIDW.png" alt="Logo de la empresa">
+<body id="body" class="container-fluid m-0 p-0">
+    <header class="d-flex justify-content-between align-items-center p-3 w-100">
+        <div class="align-items-center w-100">
+            <nav class="navbar navbar-expand-md">
+                <div class="container-fluid">
+                    <div class="w-25 d-flex">
+                        <img id="logo" src="media/logoIDW.png" alt="Logo de la empresa"
+                            class="container img-fluid align-items-center justify-content-center">
+                    </div>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link fs-5 p-4 m-0 rounded" href="index.html">Inicio</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link fs-5 p-4 m-0 rounded" href="catalogo.html">Catálogo</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link fs-5 p-4 m-0 rounded" href="nosotros.html">¿Quiénes somos?</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link fs-5 p-4 m-0 rounded" href="turnos.html">Turnos</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link fs-5 p-4 m-0 rounded" href="contacto.html">Contacto</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link fs-5 p-4 m-0 rounded" href="preguntas.html">FAQ'S</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
         </div>
-        <nav class="container" id="nav">
-            <ul class="container" id="ul">
-                <li>
-                    <a href="index.html">Inicio</a>
-                </li>
-                <li>
-                    <a href="catalogo.html">Catálogo</a>
-                </li>
-                <li>
-                    <a href="nosotros.html">¿Quiénes somos?</a>
-                </li>
-                <li>
-                    <a href="turnos.html">Turnos</a>
-                </li>
-                <li>
-                    <a href="contacto.html">Contacto</a>
-                </li>
-                <li>
-                    <a href="preguntas.html">FAQ´S</a>
-                </li>
-            </ul>
-        </nav>
     </header>
     <main class="container-fluid py-5" id="main">
         <section class="row justify-content-center">
@@ -62,37 +73,47 @@
                     <img id="gametime_imgsm" src="media/media_salones/GAMETIME.png" class="card-img-top mx-auto d-block"
                         alt="imagen de gametime">
                     <div class="card-body text-justify">
-                        <h3 class="card-title text-center">Gametime</h3>
-                        <h5 class="card-body text-center">Juegos y entretenimiento</h5>
-                        <p>En gametime nos especializamos en juegos y tecnologia, por eso te ofrecemos las mejores
-                            opciones en consolas del mercado, y mucho más. <br>Vení a visitarnos y descubrí todo lo que
-                            tenemos para ofrecerte.
-                        </p>
-                        <a href="#" class="btn btn-primary boton_card">Más info...</a>
+                        <div class="accordion">
+                            <div class="accordion-item">
+                                <h3 class="card-title text-center">Gametime</h3>
+                                <h4 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseGametime" aria-expanded="false"
+                                        aria-controls="collapseGametime">
+                                        Juegos y entretenimiento
+                                    </button>
+                                </h4>
+                                <div id="collapseGametime" class="accordion-collapse collapse"
+                                    aria-labelledby="headingOne" data-bs-parent="#accordion">
+                                    <div class="accordion-body">
+                                        <p>En gametime nos especializamos en juegos y tecnologia, por eso te ofrecemos
+                                            las mejores
+                                            opciones en consolas del mercado, y mucho más. <br>Vení a visitarnos y
+                                            descubrí todo lo que
+                                            tenemos para ofrecerte.
+                                        </p>
+                                    </div>
+                                    <a href="#" class="btn btn-primary boton_card">Más info...</a>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
             <div id="gametime_card" class=" col-10 col-md-8 col-lg-6">
                 <div id="gametime" class="color_card d-none d-md-block card h-100">
-                    <img id="gametime_img" src="media/media_salones/GAMETIME.png" class="card-img-top ms-sm-2 me-sm-2"
+                    <img id="gametime_img" src="media/media_salones/GAMETIME.png" class="card-img-top mx-auto d-block"
                         alt="imagen de gametime">
                     <div class="card-body text-center">
                         <h3 class="card-title text-center">Gametime</h3>
-                        <h5 class="card-body text_center">Juegos y entretenimiento</h5>
+                        <h4 class="card-body text_center">Juegos y entretenimiento</h4>
                         <p>En gametime nos especializamos en juegos y tecnologia, por eso te ofrecemos las mejores
-                            opciones en consolas del mercado:
+                            opciones en consolas del mercado.
                         </p>
-                        <ul>
-                            <li>PlayStation 5</li>
-                            <li>PlayStation 4</li>
-                            <li>Xbox Series X</li>
-                            <li>Xbox One</li>
-                            <li>Meta quest</li>
-                        </ul>
-                        <p>Y mucho más....
-                            Contamos con un amplio catalogo de juegos para todas las consolas y para todas las edades.
+                        <p>Contamos con un amplio catálogo de para todas las consolas y para todas las edades.
                             Además, ofrecemos una gran variedad de accesorios y periféricos para mejorar tu experiencia
                             de juego. <br>
+                            Play station, Xbox, Nintendo Switch y mucho más. <br>
                             Vení a visitarnos y descubrí todo lo que tenemos para ofrecerte
                         </p>
                         <a href="#" class="btn btn-primary boton_card">Más info...</a>
@@ -100,12 +121,12 @@
                 </div>
             </div>
             <div class="col-10 col-md-8 col-lg-6">
-                <div id="locked_card" class="color_card card h-100">
+                <div id="locked_card" class="color_card d-none d-md-block card h-100">
                     <img id="locked_img" src="media/media_salones/LOCKED.png" class="card-img-top mx-auto d-block"
                         alt="imagen de locked_salon">
                     <div class="card-body text-justify">
                         <h3 class="card-title text-center">LOCKED</h3>
-                        <h5 class="card-body text-center">Salas de escape</h5>
+                        <h4 class="card-body text-center">Salas de escape</h4>
                         <p>En LOCKED la diversion está asegurada. Vení a conocer nuestras salas de escape y poné a
                             prueba
                             tus habilidades. <br>Te invitamos a vivir una experiencia única, llena de sorpresas y
@@ -119,12 +140,49 @@
                 </div>
             </div>
             <div class="col-10 col-md-8 col-lg-6">
-                <div id="comando_card" class="color_card card h-100">
+                <div id="locked_cardsm" class="color_card d-block d-sm-block d-md-none card h-100">
+                    <img id="locked_imgsm" src="media/media_salones/LOCKED.png" class="card-img-top mx-auto d-block"
+                        alt="imagen de locked_salon">
+                    <div class="card-body text-justify">
+                        <div class="accordion">
+                            <div class="accordion-item">
+                                <h3 class="card-title text-center">Locked</h3>
+                                <h4 class="accordion-header" id="acordeon_locked">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapslocked" aria-expanded="false"
+                                        aria-controls="collapseOne">
+                                        Salas de escape y juegos de rol
+                                    </button>
+                                </h4>
+                                <div id="collapslocked" class="accordion-collapse collapse" aria-labelledby="headingOne"
+                                    data-bs-parent="#accordiondata">
+                                    <div class="accordion-body">
+                                        <p>En LOCKED la diversion está asegurada. Vení a conocer nuestras salas de
+                                            escape y poné a
+                                            prueba
+                                            tus habilidades. <br>Te invitamos a vivir una experiencia única, llena de
+                                            sorpresas y
+                                            desafíos.
+                                            <br>Contamos con una gran variedad de juegos y temáticas para que puedas
+                                            elegir la que más
+                                            te
+                                            guste. <br>Te esperamos para que vivas una experiencia inolvidable.
+                                        </p>
+                                    </div>
+                                    <a href="#" class="btn btn-primary boton_card">Más info...</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-10 col-md-8 col-lg-6">
+                <div id="comando_card" class="color_card d-none d-md-block card h-100">
                     <img id="comando_img" src="media/media_salones/COMANDO_PAINTBALL.png"
                         class="card-img-top mx-auto d-block" alt="comando paintball">
                     <div class="card-body text-justify">
                         <h3 class="card-title text-center">Comando</h3>
-                        <h5 class="card-body text-center">Paintball fields</h5>
+                        <h4 class="card-body text-center">Paintball fields</h4>
                         <p>En Comando te ofrecemos una experiencia diferente, llena de diversion y adrenalina. Vení con
                             tus amigos a divertirte y pasar un día de aventura como nunca imaginaste. <br>Diversión
                             segura para todas las edades.
@@ -135,67 +193,338 @@
                 </div>
             </div>
             <div class="col-10 col-md-8 col-lg-6">
-                <div id="globitos_card" class="color_card card h-100">
-                    <img id="globitos_img" src="media/media_salones/globitos.png" class="card-img-top mx-auto d-block" alt="imagen de salon globitos">
+                <div id="comando_cardsm" class="color_card d-block d-sm-block d-md-none card h-100">
+                    <img id="comando_imgsm" src="media/media_salones/COMANDO_PAINTBALL.png"
+                        class="card-img-top mx-auto d-block" alt="comando paintball">
+                    <div class="card-body text-justify">
+                        <div class="accordion">
+                            <div class="accordion-item">
+                                <h3 class="card-title text-center">Comando</h3>
+                                <h4 class="accordion-header" id="acordeon_comando">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapscomando" aria-expanded="false"
+                                        aria-controls="collapseOne">
+                                        Paintball fields - Diversión al aire libre
+                                    </button>
+                                </h4>
+                                <div id="collapscomando" class="accordion-collapse collapse"
+                                    aria-labelledby="headingOne" data-bs-parent="#accordiondata">
+                                    <div class="accordion-body">
+                                        <p>En Comando te ofrecemos una experiencia diferente, llena de diversion y
+                                            adrenalina. Vení con
+                                            tus amigos a divertirte y pasar un día de aventura como nunca imaginaste.
+                                            <br>Diversión
+                                            segura para todas las edades.
+                                            <br>Vení a festejar un cumpleaños diferente. <br>¡Te esperamos!
+                                        </p>
+                                    </div>
+                                    <a href="#" class="btn btn-primary boton_card">Más info...</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-10 col-md-8 col-lg-6">
+                <div id="globitos_card" class="color_card d-none d-md-block card h-100 ">
+                    <img id="globitos_img" src="media/media_salones/globitos.png" class="card-img-top mx-auto d-block"
+                        alt="imagen de salon globitos">
                     <div class="card-body text-justify">
                         <h3 class="card-title text-center">Globitos</h3>
-                        <h5 class="card-body text-center">Salón infantil</h5>
-                        <p>En Comando te ofrecemos una experiencia diferente, llena de diversion y adrenalina. Vení con
-                            tus amigos a divertirte y pasar un día de aventura como nunca imaginaste. <br>Diversión
-                            segura para todas las edades.
-                            <br>Vení a festejar un cumpleaños diferente. <br>¡Te esperamos!
+                        <h4 class="card-body text-center">Salón infantil</h4>
+                        <p>En Globitos te ofrecemos una experiencia familiar, llena de diversion y colores. Vení con tus
+                            amigos a divertirte en nuestro salon de fiestas super equipado. Diversion para todas las
+                            edades.
+                            <br>Contamos con un amplio catalogo de juegos y actividades para que puedas disfrutar al
+                            maximo.
                         </p>
                         <a href="#" class="btn btn-primary boton_card">Más info...</a>
                     </div>
                 </div>
             </div>
             <div class="col-10 col-md-8 col-lg-6">
-                <div id="arcoiris_card" class="color_card card h-100">
-                    <img id="arcoiris_img" src="media/media_salones/arcoiris.png" class="card-img-top mx-auto d-block" alt="imagen de salon globitos">
+                <div id="globitos_cardsm" class="color_card d-block d-sm-block d-md-none card h-100">
+                    <img id="globitos_imgsm" src="media/media_salones/globitos.png" class="card-img-top mx-auto d-block"
+                        alt="imagen de salon globitos">
+                    <div class="card-body text-justify">
+                        <div class="accordion">
+                            <div class="accordion-item">
+                                <h3 class="card-title text-center">Globitos</h3>
+                                <h4 class="accordion-header" id="acordeon_globitos">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapsglobitos" aria-expanded="false"
+                                        aria-controls="collapseOne">
+                                        Salón de fiestas infantiles
+                                    </button>
+                                </h4>
+                                <div id="collapsglobitos" class="accordion-collapse collapse"
+                                    aria-labelledby="headingOne" data-bs-parent="#accordiondata">
+                                    <div class="accordion-body">
+                                        <p>En Globitos te ofrecemos una experiencia familiar, llena de diversion y
+                                            colores. Vení con tus amigos a divertirte en nuestro salon de fiestas super
+                                            equipado. Diversion para todas las edades.
+                                            <br>Contamos con un amplio catalogo de juegos y actividades para que puedas
+                                            disfrutar al
+                                            maximo.
+                                        </p>
+                                    </div>
+                                    <a href="#" class="btn btn-primary boton_card">Más info...</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-10 col-md-8 col-lg-6">
+                <div id="arcoiris_card" class="color_card d-none d-md-block card h-100">
+                    <img id="arcoiris_img" src="media/media_salones/arcoiris.png" class="card-img-top mx-auto d-block"
+                        alt="imagen de salon arcoiris">
                     <div class="card-body text-justify">
                         <h3 class="card-title text-center">Arcoiris</h3>
-                        <h5 class="card-body text-center">Salón infantil</h5>
-                        <p>En Comando te ofrecemos una experiencia diferente, llena de diversion y adrenalina. Vení con
-                            tus amigos a divertirte y pasar un día de aventura como nunca imaginaste. <br>Diversión
-                            segura para todas las edades.
-                            <br>Vení a festejar un cumpleaños diferente. <br>¡Te esperamos!
+                        <h4 class="card-body text-center">Salón infantil</h4>
+                        <p>En ArcoIris te ofrecemos calidad y diversión para los más pequeños.
+                            <br>Contamos
+                            con un salón de fiestas infantil, donde podrás celebrar el cumpleaños de tu
+                            hijo/a como nunca antes. <br>Tenemos una gran variedad de juegos y
+                            actividades para que los más pequeños se diviertan al máximo. <br>Además,
+                            ofrecemos un servicio de catering adaptado a las necesidades de cada niño/a.
+                            <br>Vení a festejar con nosotros <br>¡Te esperamos!
                         </p>
                         <a href="#" class="btn btn-primary boton_card">Más info...</a>
                     </div>
                 </div>
+            </div>
+            <div class="col-10 col-md-8 col-lg-6">
+                <div id="arcoiris_cardsm" class="color_card d-block d-sm-block d-md-none card h-100">
+                    <img id="arcoiris_imgsm" src="media/media_salones/arcoiris.png" class="card-img-top mx-auto d-block"
+                        alt="imagen de salon globitos">
+                    <div class="card-body text-justify">
+                        <div class="accordion">
+                            <div class="accordion-item">
+                                <h3 class="card-title text-center">AcoIris</h3>
+                                <h4 class="accordion-header" id="acordeon_AcoIris">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapsAcoIris" aria-expanded="false"
+                                        aria-controls="collapseOne">
+                                        Salón de fiestas infantiles
+                                    </button>
+                                </h4>
+                                <div id="collapsAcoIris" class="accordion-collapse collapse"
+                                    aria-labelledby="headingOne" data-bs-parent="#accordiondata">
+                                    <div class="accordion-body">
+                                        <p>En Globitos te ofrecemos una experiencia familiar, llena de diversion y
+                                            colores. Vení con tus amigos a divertirte en nuestro salon de fiestas super
+                                            equipado. Diversion para todas las edades.
+                                            <br>Contamos con un amplio catalogo de juegos y actividades para que puedas
+                                            disfrutar al
+                                            maximo.
+                                        </p>
+                                    </div>
+                                    <a href="#" class="btn btn-primary boton_card">Más info...</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-10 col-md-8 col-lg-6">
+                <div id="pininos_card" class="color_card d-none d-md-block card h-100">
+                    <img id="pininos_img" src="media/media_salones/pininos.png" class="card-img-top mx-auto d-block"
+                        alt="imagen de salon pininos">
+                    <div class="card-body text-justify">
+                        <h3 class="card-title text-center">Pininos</h3>
+                        <h4 class="card-body text-center">Salón infantil</h4>
+                        <p>En Pininos te ofrecemos un lugar especial lleno de juegos y diversión para los más
+                            pequeñitos.
+                            <br>Contamos con infinidad de juegos didacticos y la sala blanda más grande y completa de la
+                            ciudad<br>Además, ofrecemos varias opciones de servicios que se adaptan a tus necesidades.
+                            Y, por supuesto, tenemos actividades para los niños más grandes también.
+                            <br>Vení a festejar con nosotros <br>¡Te esperamos!
+                        </p>
+                        <a href="#" class="btn btn-primary boton_card">Más info...</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-10 col-md-8 col-lg-6">
+                <div id="pininos_cardsm" class="color_card d-block d-sm-block d-md-none card h-100">
+                    <img id="pininos_imgsm" src="media/media_salones/pininos.png" class="card-img-top mx-auto d-block"
+                        alt="imagen de salon pininoss">
+                    <div class="card-body text-justify">
+                        <div class="accordion">
+                            <div class="accordion-item">
+                                <h3 class="card-title text-center">Pininos</h3>
+                                <h4 class="accordion-header" id="acordeon_pininos">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapspininos" aria-expanded="false"
+                                        aria-controls="collapseOne">
+                                        Salón de fiestas infantiles
+                                    </button>
+                                </h4>
+                                <div id="collapspininos" class="accordion-collapse collapse"
+                                    aria-labelledby="headingOne" data-bs-parent="#accordiondata">
+                                    <div class="accordion-body">
+                                        <p>En Pininos te ofrecemos un lugar especial lleno de juegos y diversión para
+                                            los más pequeñitos.
+                                            <br>Contamos con infinidad de juegos didacticos y la sala blanda más grande
+                                            y completa de la ciudad<br>Además, ofrecemos varias opciones de servicios
+                                            que se adaptan a tus necesidades. Y, por supuesto, tenemos actividades para
+                                            los niños más grandes también.
+                                            <br>Vení a festejar con nosotros <br>¡Te esperamos!
+                                        </p>
+                                    </div>
+                                    <a href="#" class="btn btn-primary boton_card">Más info...</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-10 col-md-8 col-lg-6">
+                <div id="rebotin_card" class="color_card d-none d-md-block card h-100">
+                    <img id="rebotin_img" src="media/media_salones/REBOTIN.png" class="card-img-top mx-auto d-block"
+                        alt="imagen de salon rebotin">
+                    <div class="card-body text-justify">
+                        <h3 class="card-title text-center">Rebotin</h3>
+                        <h4 class="card-body text-center">Parque de juegos inflables</h4>
+                        <p>En Rebotin te ofrecemos un lugar muy especial y único.
+                            <br>¡Somos el parque de inflables más grande de la región!<br>Podés festejar en nuestros
+                            salones climatizados, o en nuestro quincho al aire libre. También te llevamos nuestros
+                            inflabes a tu casa, no importa en qué lugar de la ciudad te encuentres, nosotros armamos tu
+                            fiesta en el lugar que elijas.
+                            <br>Comunicate con nosotros <br>¡Te esperamos!
+                        </p>
+                        <a href="#" class="btn btn-primary boton_card">Más info...</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-10 col-md-8 col-lg-6">
+                <div id="rebotin_cardsm" class="color_card d-block d-sm-block d-md-none card h-100">
+                    <img id="rebotin_imgsm" src="media/media_salones/REBOTIN.png" class="card-img-top mx-auto d-block"
+                        alt="imagen de salon rebotin">
+                    <div class="card-body text-justify">
+                        <div class="accordion">
+                            <div class="accordion-item">
+                                <h3 class="card-title text-center">Rebotin</h3>
+                                <h4 class="accordion-header" id="acordeon_rebotin">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapsrebotin" aria-expanded="false"
+                                        aria-controls="collapseOne">
+                                        Salón de fiestas infantiles
+                                    </button>
+                                </h4>
+                                <div id="collapsrebotin" class="accordion-collapse collapse"
+                                    aria-labelledby="headingOne" data-bs-parent="#accordiondata">
+                                    <div class="accordion-body">
+                                        <p>En Rebotin te ofrecemos un lugar muy especial y único.
+                                            <br>¡Somos el parque de inflables más grande de la región!<br>Podés festejar
+                                            en nuestros salones climatizados, o en nuestro quincho al aire libre.
+                                            También te llevamos nuestros inflabes a tu casa, no importa en qué lugar de
+                                            la ciudad te encuentres, nosotros armamos tu fiesta en el lugar que elijas.
+                                            <br>Comunicate con nosotros <br>¡Te esperamos!
+                                        </p>
+                                    </div>
+                                    <a href="#" class="btn btn-primary boton_card">Más info...</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-10 col-md-8 col-lg-6">
+                <div id="zona_card" class="color_card d-none d-md-block card h-100">
+                    <img id="zona_img" src="media/media_salones/ZONADEDIVERSION.png" class="card-img-top mx-auto d-block"
+                        alt="imagen de salon Zona de diversion">
+                    <div class="card-body text-justify">
+                        <h3 class="card-title text-center">Zona de diversión</h3>
+                        <h4 class="card-body text-center">Parque de juegos inflables - Salas tematicas</h4>
+                        <p>En Zona de diversión somos expertos en entretenimiento. Contamos con variedad de de juegos inflables, salas blandas y juegos de mesa, ademas de salas tematicas con tus personajes favoritos.
+                            <br>Contamos con un amplio catalogo de juegos y actividades para que puedas disfrutar al
+                            maximo.
+                            <br>Vení a festejar con nosotros <br>¡Te esperamos!
+                        </p>
+                        <a href="#" class="btn btn-primary boton_card">Más info...</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-10 col-md-8 col-lg-6">
+                <div id="rebotin_cardsm" class="color_card d-block d-sm-block d-md-none card h-100">
+                    <img id="zona_imgsm" src="media/media_salones/ZONADEDIVERSION.png" class="card-img-top mx-auto d-block"
+                        alt="imagen de salon zona de diversion">
+                    <div class="card-body text-justify">
+                        <div class="accordion">
+                            <div class="accordion-item">
+                                <h3 class="card-title text-center">Zona de diversión</h3>
+                                <h4 class="accordion-header" id="acordeon_zonaD">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapszonaD" aria-expanded="false"
+                                        aria-controls="collapseOne">
+                                        Salón de fiestas infantiles
+                                    </button>
+                                </h4>
+                                <div id="collapszonaD" class="accordion-collapse collapse"
+                                    aria-labelledby="headingOne" data-bs-parent="#accordiondata">
+                                    <div class="accordion-body">
+                                        <p>En Zona de diversión somos expertos en entretenimiento. Contamos con variedad de de juegos inflables, salas blandas y juegos de mesa, ademas de salas tematicas con tus personajes favoritos.
+                            <br>Contamos con un amplio catalogo de juegos y actividades para que puedas disfrutar al
+                            maximo.
+                            <br>Vení a festejar con nosotros <br>¡Te esperamos!
+                        </p>
+                                    </div>
+                                    <a href="#" class="btn btn-primary boton_card">Más info...</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+            </div>
             </div>
         </section>
     </main>
-    <footer class="container" id="footer" style="display:none">
-        <div class="logo">
-            <img id="logofooter" src="media/logoIDW.png" alt="logo de la empresa">
-        </div>
-        <div id="footerenlaces">
-            <ul class="ulfooter">
-                <li>
-                    <a class="linkfooter" href="index.html">Inicio</a>
-                </li>
-                <li>
-                    <a class="linkfooter" href="catalogo.html">Catalogo</a>
-                </li>
-                <li>
-                    <a class="linkfooter" href="nosotros.html">¿Quiénes somos?</a>
-                </li>
-                <li>
-                    <a class="linkfooter" href="turnos.html">Turnos</a>
-                </li>
-                <li>
-                    <a class="linkfooter" href="contacto.html">Contacto</a>
-                </li>
-                <li>
-                    <a class="linkfooter" href="preguntas.html">FAQ´S</a>
-                </li>
-            </ul>
-        </div>
-        <div id="redes">
-            <img src="media/facebook-4.svg" alt="logo facebook" class="redes">
-            <img src="media/instagram-2016-6.svg" alt="logo instagram" class="redes">
-            <img src="media/whatsapp-8.svg" alt="logo whatsapp" class="redes">
+    <footer class="container-fluid m-auto p-3 align-items-center justify-content-center" id="footer">
+        <div class="row align-items-center justify-content-between text-center text-lg-start">
+            <div class="col-lg-3 col-md-12 mb-3 mb-lg-0 d-flex justify-content-center">
+                <img id="logofooter" class="justify-content-center p-2 w-100" src="media/logoIDW.png"
+                    alt="logo de la empresa">
+            </div>
+            <div
+                class="col-lg-6 col-md-12 mb-3 mb-lg-0 d-flex justify-content-center border-start border-end border-white border-4">
+                <ul class="text-decoration-none list-unstyled mx-auto d-grid">
+                    <li class="my-4 mx-auto">
+                        <a class="text-decoration-none p-2 m-auto fs-4 text-white rounded-3"
+                            href="index.html">Inicio</a>
+                    </li>
+                    <li class="my-4 mx-auto">
+                        <a class="text-decoration-none p-2 m-auto fs-4 text-white rounded-3"
+                            href="catalogo.html">Catálogo</a>
+                    </li>
+                    <li class="my-4 mx-auto">
+                        <a class="text-decoration-none p-2 m-auto fs-4 text-white rounded-3"
+                            href="nosotros.html">¿Quiénes somos?</a>
+                    </li>
+                </ul>
+                <ul class="text-decoration-none list-unstyled mx-auto d-grid rounded-3">
+                    <li class="my-4 mx-auto">
+                        <a class="text-decoration-none p-2 m-auto fs-4 text-white rounded-3"
+                            href="turnos.html">Turnos</a>
+                    </li>
+                    <li class="my-4 mx-auto">
+                        <a class="text-decoration-none p-2 m-auto fs-4 text-white rounded-3"
+                            href="contacto.html">Contacto</a>
+                    </li>
+                    <li class="my-4 mx-auto">
+                        <a class="text-decoration-none p-2 m-auto fs-4 text-white rounded-3"
+                            href="preguntas.html">FAQ'S</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-lg-3 col-md-12 d-flex flex-lg-column flex-row align-item-center justify-content-between gap-1"
+                id="redes">
+                <img src="media/facebook-4.svg" alt="logo facebook" class="w-25 p-1 mx-auto rounded-2">
+                <img src="media/instagram-2016-6.svg" alt="logo instagram" class="w-25 p-1 mx-auto rounded-2">
+                <img src="media/whatsapp.svg" alt="logo whatsapp" class="w-25 p-1 mx-auto rounded-2">
+            </div>
         </div>
     </footer>
     <script src="scripts/scripts.js"></script>
