@@ -1,4 +1,4 @@
-#gametime_img, #gametime_imgsm, #locked_img, #comando_img{
+div.card img{
     width: 80%;
     margin: 1rem 1rem;
 }
