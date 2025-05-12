@@ -1,21 +1,7 @@
 #main{
     background-color: rgba(193, 193, 248, 0.2);
-    justify-content: center;
 }
 
 .texto-nosotros {
     background-color: rgba(193, 193, 248, 0.6);
-    border-radius: 5px;
-    padding: 20px;
-    font-size: 1.2em;
-    color: #000000;
-    text-align: center;
-    margin: 45px 0;
-    align-items: center;
-}
-
-.texto-nosotros h2 {
-    font-size: 1.6em;
-    color: #000000;
-    margin-bottom: 10px;
 }
