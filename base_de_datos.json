@@ -1,0 +1,57 @@
+{
+	"salones": [
+		{
+			"ID": "0F123A",
+			"nombre": "Aventuras",
+			"descripción": "Salon infantil para 20 personas",
+			"direccion": "salta 123",
+			"estado": "disponible",
+			"precio": "250000"
+		},
+		{
+			"ID": "0F783A",
+			"nombre": "Pininos",
+			"descripción": "Salon infantil para 20 personas",
+			"direccion": "salta 123",
+			"estado": "disponible",
+			"precio": "250000"
+		}
+	],
+	"servicios": [
+		{
+			"ID_servicio": "0F123A",
+			"descripción": "extra 10 personas",
+			"precio": "50000"
+		},
+		{
+			"ID_servicio": "0F1363A",
+			"descripción": "catering + limpieza",
+			"precio": "50000"
+		},
+		{
+			"ID_servicio": "0F123A",
+			"descripción": "catering extra 10 personas",
+			"precio": "50780"
+		}
+	],
+	"presupuestos": [
+		{
+			"id_presupuesto": "c01v522",
+			"Apellido": "...",
+			"nombre": "...",
+			"fecha": "12/12/666",
+			"Temática": "infantil al aire libre",
+			"valor total": "2563669",
+			"Servicios seleccionados": "..."
+		}
+	],
+	"usuarios": [
+		{
+			"ID_user": "0F123A",
+			"nombre": "Agustin",
+			"apellido": "Merele",
+			"correo": "destapa_zanjas2000Qgmail.com",
+			"PIN": "7963"
+		}
+	]
+}
