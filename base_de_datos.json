@@ -4,17 +4,33 @@
 			"ID": "0F123A",
 			"nombre": "Aventuras",
 			"descripción": "Salon infantil para 20 personas",
+			"resumen":"",
 			"direccion": "salta 123",
 			"estado": "disponible",
-			"precio": "250000"
+			"precio": "250000",
+			"multimedia":[
+				{"id_imagen":"...",
+				"descripcion":"...",
+				"url":"https://example.com/imagen1.jpg"},
+				{"id_imagen":"..."
+			}
+			]
 		},
 		{
 			"ID": "0F783A",
 			"nombre": "Pininos",
 			"descripción": "Salon infantil para 20 personas",
+			"resumen":"",
 			"direccion": "salta 123",
 			"estado": "disponible",
-			"precio": "250000"
+			"precio": "250000",
+			"multimedia":[
+				{"id_imagen":"...",
+				"descripcion":"...",
+				"url":"https://example.com/imagen1.jpg"},
+				{"id_imagen":"..."
+			}
+			]
 		}
 	],
 	"servicios": [
