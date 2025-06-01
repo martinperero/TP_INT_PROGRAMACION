@@ -86,10 +86,11 @@ div.carousel-inner{
 div .carousel-indicators{
     top:95%;
 }
+
 div .carousel-control-next img,div .carousel-control-prev img {
     width: 60px;
     height: 60px;
-    background-color: rgba(0, 0, 0, 0.5); /* Fondo semitransparente */
+    background-color: rgba(0, 0, 0, 0.5); 
     border-radius: 50%;
     margin: 0;
     padding: 0;
