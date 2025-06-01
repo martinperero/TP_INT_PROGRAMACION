@@ -76,8 +76,35 @@ div.carousel-inner{
 .descripcion_slide{
     margin: 0.40rem 0.40rem;
     padding: 0.20rem 0.20rem;
-    box-shadow: rgb(138, 43, 226);
+    box-shadow: #8a2be2;
 }
+/* Estos son los estilos del carrusel de cada salon */
+.carousel-item img {
+    height: 300px;
+    object-fit: cover; 
+}
+div .carousel-indicators{
+    top:95%;
+}
+div .carousel-control-next img,div .carousel-control-prev img {
+    width: 60px;
+    height: 60px;
+    background-color: rgba(0, 0, 0, 0.5); /* Fondo semitransparente */
+    border-radius: 50%;
+    margin: 0;
+    padding: 0;
+}
+div .carousel-control-prev img {
+transform: scaleX(-1);
+}
+
+div .carousel-indicators .preview-img {
+    width: 50px; 
+    height: 30px;
+    object-fit: cover;
+    border-radius: 5px; 
+}
+
 
 
 
