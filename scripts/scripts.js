@@ -120,6 +120,19 @@ function cargarSalon() {
         
         .catch(error => console.error("Error cargando JSON:", error));
 }
+//  función para redirigir a reserva heredando ID, nashe
+function redirigirAReserva() {
+    console.log("Función redirigirAReserva() ejecutada."); 
+    const salonId = localStorage.getItem("salonSeleccionado");
+    console.log(`ID del salón obtenida para la reserva: ${salonId}`); 
+    if (salonId) {
+        console.log(`Redirigiendo a reserva.html?salon=${salonId}`); 
+        window.location.href = `reserva.html?salon=${salonId}`;
+    } else {
+        console.error("No se encontró el ID del salón para la reserva.");
+        alert("Error: No se pudo identificar el salón para la reserva.");
+    }
+}
 
 // Ejecutar funciones cuando el DOM esté listo
 document.addEventListener("DOMContentLoaded", () => {
