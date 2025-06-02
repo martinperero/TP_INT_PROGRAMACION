@@ -57,6 +57,8 @@ document.getElementById('loginForm').addEventListener('submit', async function(e
 
 
             alert('¡Inicio de sesión exitoso! Bienvenido, ' + usuario.nombre);
+            localStorage.setItem("usuarioActual", JSON.stringify(usuario));
+            window.location.href = "tabla.html";
         } else {
 
             alert('Error: Nombre, correo o contraseña incorrectos.');
