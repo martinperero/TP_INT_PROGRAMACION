@@ -20,6 +20,6 @@ document.getElementById("agregar").addEventListener("click", function () {
         alert("Salón agregado correctamente.");
         location.reload();
     } else {
-        alert("Los campos Nombre, Descripción y Dirección son obligatorios.");
+        alert("Los campos ID, Nombre, Descripción y Dirección son obligatorios.");
     }
 });
