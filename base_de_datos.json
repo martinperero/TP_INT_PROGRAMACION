@@ -484,17 +484,17 @@
             "correo": "trabajo@gmail.com",
             "PIN": "7963"
         },
-	{
-	"ID_user": "0F124A",
-	"nombre": "Ignacio Novello",
-	"correo": "ignacionovello@example.com",
-	"PIN": "1234"
-	}
-	{
-	"ID_user": "0F125A",
-	"nombre": "Amalia Faure",
-	"correo": "amaliafaure@example.com",
-	"PIN": "5678"
-	}
+		{
+		"ID_user": "0F124A",
+		"nombre": "Ignacio Novello",
+		"correo": "ignacionovello@example.com",
+		"PIN": "1234"
+		},
+		{
+		"ID_user": "0F125A",
+		"nombre": "Amalia Faure",
+		"correo": "amaliafaure@example.com",
+		"PIN": "5678"
+		}
     ]
 }
