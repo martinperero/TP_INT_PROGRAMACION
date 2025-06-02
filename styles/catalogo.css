@@ -106,12 +106,12 @@ div .carousel-indicators .preview-img {
     border-radius: 5px; 
 }
 
-div.card{
+div.card.desktop{
     width: 30%;
     margin: auto;
     min-height: 35rem;
 }
-div.card img{
+div.card.desktop img{
     height: 18rem;
     width: 100%;
 object-fit: cover; 
