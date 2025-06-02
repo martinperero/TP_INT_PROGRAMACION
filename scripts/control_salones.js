@@ -35,15 +35,6 @@ document.addEventListener('DOMContentLoaded', () => {
                 <td>${salon.estado}</td>
                 <td>${salon.precio}</td>
                 <td>
-                    ${salon.multimedia.map(media => `
-                        <div class="media-item">
-                            <img src="${media.url}" width="100"><br>
-                            <small>${media.descripcion}</small>
-                            <p>------------------</p>
-                        </div>
-                    `).join('')}
-                </td>
-                <td>
                     <button class="rounded btn btn-outline-success my-2" onclick="window.location.href='editar.html?id=${salon.id_salon}'">Editar</button>
                     <button class="rounded btn btn-outline-danger my-2" onclick="eliminarSalon('${salon.id_salon}')">Eliminar</button>
                 </td>
