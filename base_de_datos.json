@@ -1,35 +1,552 @@
 {
 	"salones": [
 		{
-			"ID": "0F123A",
-			"nombre": "Aventuras",
-			"descripción": "Salon infantil para 20 personas",
-			"resumen":"",
+			"id_salon": "0F123A",
+			"nombre": "LOCKED",
+			"portada": "https://res.cloudinary.com/dmroa1p5p/image/upload/v1748733827/locked_desktop_nxh5ta.webp",
+			"descripcion": "Salon infantil para 20 personas",
+			"resumen": [
+				"En LOCKED ofrecemos una experiencia única de escape room, donde podrás disfrutar de un juego de ingenio y aventura con amigos, familiares o compañeros de trabajo. Nuestros salones están diseñados para desafiar tu mente y poner a prueba tus habilidades de resolución de problemas.",
+				"Cada uno de nuestros salones cuenta con una temática única y emocionante, desde misterios antiguos hasta aventuras futuristas. Te invitamos a sumergirte en un mundo lleno de enigmas y sorpresas, donde deberás trabajar en equipo para resolver los acertijos y escapar antes de que se acabe el tiempo.",
+				"Te ofrecemos una experiencia de alta calidad, con atención al detalle y un servicio excepcional. Nuestro equipo está comprometido a garantizar que cada visita sea inolvidable y llenade diversión.",
+				"Tenemos un espacio completamente equipado con cocina, heladeras y juegos para que notengas que preocuparte por nada más que la diversión.Tenemos una capacidad máxima de 10 personas por turno, lo que garantiza una experiencia más personalizada y emocionante. Además, ofrecemos un servicio de catering para que puedas disfrutar de una comida deliciosa mientras te sumerges en la aventura.",
+				"Tenemos muchisimas opciones que se ajustan a tu presupuesto"
+			],
 			"direccion": "salta 123",
 			"estado": "disponible",
 			"precio": "250000",
-			"multimedia":[
-				{"id_imagen":"...",
-				"descripcion":"...",
-				"url":"https://example.com/imagen1.jpg"},
-				{"id_imagen":"..."
-			}
+			"footer_tarjeta": "¡No pierdas la oportunidad de vivir una experiencia única y emocionante en LOCKED! Reserva tu turno ahora y prepárate para una aventura inolvidable.",
+			"multimedia": [
+				{
+					"id_imagen": "sil1001",
+					"nombre_imagen": "imagen_1",
+					"descripcion": "sala de escapes e ingenio",
+					"url": "https://res.cloudinary.com/dmroa1p5p/image/upload/v1748733717/1-escape-room_dinjsa.webp"
+				},
+				{
+					"id_imagen": "sil1002",
+					"nombre_imagen": "imagen_2",
+					"descripcion": "sala de escapes e ingenio",
+					"url": "https://res.cloudinary.com/dmroa1p5p/image/upload/v1748733717/2-escape-room_ybjq8t.webp"
+				},
+				{
+					"id_imagen": "sil1003",
+					"nombre_imagen": "imagen_3",
+					"descripcion": "sala de escapes e ingenio",
+					"url": "https://res.cloudinary.com/dmroa1p5p/image/upload/v1748733717/3-escape-room_hh8vcf.webp"
+				},
+				{
+					"id_imagen": "sil1004",
+					"nombre_imagen": "imagen_4",
+					"descripcion": "sala de escapes e ingenio",
+					"url": "https://res.cloudinary.com/dmroa1p5p/image/upload/v1748733717/4-escape-room_wxchy4.webp"
+				},
+				{
+					"id_imagen": "sil1005",
+					"nombre_imagen": "imagen_5",
+					"descripcion": "sala de escapes e ingenio",
+					"url": "https://res.cloudinary.com/dmroa1p5p/image/upload/v1748733717/5-escape-room_z2kphv.webp"
+				},
+				{
+					"id_imagen": "sil1006",
+					"nombre_imagen": "imagen_6",
+					"descripcion": "sala de escapes e ingenio",
+					"url": "https://res.cloudinary.com/dmroa1p5p/image/upload/v1748733717/6-escape-room_d5ihuu.webp"
+				},
+				{
+					"id_imagen": "sil1007",
+					"nombre_imagen": "imagen_7",
+					"descripcion": "sala de escapes e ingenio",
+					"url": "https://res.cloudinary.com/dmroa1p5p/image/upload/v1748733718/7-escape-room_njk4d5.webp"
+				}
 			]
 		},
 		{
-			"ID": "0F783A",
-			"nombre": "Pininos",
-			"descripción": "Salon infantil para 20 personas",
-			"resumen":"",
-			"direccion": "salta 123",
+			"id_salon": "0F124A",
+			"nombre": "Zona de diversion",
+			"portada": "https://res.cloudinary.com/dmroa1p5p/image/upload/v1748733836/ZONADEDIVERSION_desktop_uuyqe9.webp",
+			"descripcion": "Salon infantil, varias edades. Hasta 100 personas",
+			"resumen": [
+				"En nuestro salón infantil inflable, los más pequeños disfrutan de un mundo lleno de color, saltos y alegría. Contamos con estructuras inflables seguras y temáticas que invitan a la diversión sin límites para todas las edades.",
+				"Cada rincón está pensado para estimular la imaginación, con castillos, toboganes, túneles y zonas de juegos que transforman cualquier celebración en una experiencia inolvidable. La seguridad y el entretenimiento van de la mano en nuestro espacio.",
+				"Nos destacamos por ofrecer un servicio personalizado y de calidad, con personal capacitado que acompaña a los niños durante su experiencia. Nuestra atención al detalle garantiza un ambiente cuidado, alegre y seguro para toda la familia.",
+				"Además del área inflable, contamos con un espacio cómodo para los adultos, cocina equipada, heladeras, y opciones de catering para que disfrutes sin preocuparte por nada. La limpieza y el orden son prioridad en cada turno.",
+				"Ofrecemos diferentes paquetes que se adaptan a tu presupuesto, con opciones flexibles para que puedas planificar la fiesta ideal sin complicaciones. ¡Hacemos que tu evento sea tan divertido como inolvidable!"
+			],
+			"direccion": "cordoba 2020",
 			"estado": "disponible",
-			"precio": "250000",
-			"multimedia":[
-				{"id_imagen":"...",
-				"descripcion":"...",
-				"url":"https://example.com/imagen1.jpg"},
-				{"id_imagen":"..."
-			}
+			"precio": "290000",
+			"footer_tarjeta": "¡Vení a divertirte con nosotros. Diversión asegurada en Zona de diversión! Reserva tu turno ahora y prepárate para una aventura inolvidable.",
+			"multimedia": [
+				{
+					"id_imagen": "sil1001",
+					"nombre_imagen": "imagen_1",
+					"descripcion": "inflables infantiles",
+					"url": "https://res.cloudinary.com/dmroa1p5p/image/upload/v1748733717/1-escape-room_dinjsa.webp"
+				},
+				{
+					"id_imagen": "sil1002",
+					"nombre_imagen": "imagen_2",
+					"descripcion": "inflables infantiles",
+					"url": "https://res.cloudinary.com/dmroa1p5p/image/upload/v1748733717/2-escape-room_ybjq8t.webp"
+				},
+				{
+					"id_imagen": "sil1003",
+					"nombre_imagen": "imagen_3",
+					"descripcion": "inflables infantiles",
+					"url": "https://res.cloudinary.com/dmroa1p5p/image/upload/v1748733717/3-escape-room_hh8vcf.webp"
+				},
+				{
+					"id_imagen": "sil1004",
+					"nombre_imagen": "imagen_4",
+					"descripcion": "inflables infantiles",
+					"url": "https://res.cloudinary.com/dmroa1p5p/image/upload/v1748733717/4-escape-room_wxchy4.webp"
+				},
+				{
+					"id_imagen": "sil1005",
+					"nombre_imagen": "imagen_5",
+					"descripcion": "inflables infantiles",
+					"url": "https://res.cloudinary.com/dmroa1p5p/image/upload/v1748733717/5-escape-room_z2kphv.webp"
+				},
+				{
+					"id_imagen": "sil1006",
+					"nombre_imagen": "imagen_6",
+					"descripcion": "inflables infantiles",
+					"url": "https://res.cloudinary.com/dmroa1p5p/image/upload/v1748733717/6-escape-room_d5ihuu.webp"
+				},
+				{
+					"id_imagen": "sil1007",
+					"nombre_imagen": "imagen_7",
+					"descripcion": "inflables infantiles",
+					"url": "https://res.cloudinary.com/dmroa1p5p/image/upload/v1748733718/7-escape-room_njk4d5.webp"
+				}
+			]
+		},
+		{
+			"id_salon": "0F125A",
+			"nombre": "Rebotín",
+			"portada": "https://res.cloudinary.com/dmroa1p5p/image/upload/v1748733833/REBOTIN_desktop_squkbp.webp",
+			"descripcion": "Salon infantil, parque de inflables. Hasta 50 personas",
+			"resumen": [
+				"Rebotín es el parque de inflables y juegos donde la diversión rebota sin parar. Un espacio lleno de color, energía y aventura pensado para que los chicos disfruten como nunca en un entorno seguro y supervisado.",
+				"Desde gigantescos castillos inflables hasta zonas de trepado, toboganes y obstáculos, cada rincón de Rebotín está diseñado para estimular el movimiento, la imaginación y la alegría. ¡Ideal para cumpleaños, salidas escolares o simplemente un día de pura diversión!",
+				"En Rebotín nos tomamos la seguridad muy en serio: todos nuestros juegos están certificados y cuentan con personal atento que guía y cuida a los más chicos durante toda la jornada. Los papás pueden relajarse sabiendo que los chicos están en buenas manos.",
+				"También contamos con espacios de descanso, áreas para comer, y opciones de catering si querés celebrar un evento especial sin preocuparte por nada. Nuestro parque está equipado con todo lo necesario para grandes y chicos.",
+				"Tenemos diferentes planes y promociones que se adaptan a todas las edades y presupuestos. En Rebotín te garantizamos una experiencia llena de saltos, risas y recuerdos inolvidables. ¡Vení a rebotar con nosotros!"
+			],
+			"direccion": "Asunción 200",
+			"estado": "disponible",
+			"precio": "29600",
+			"footer_tarjeta": "¡Vení a divertirte con nosotros. Diversión asegurada en Rebotín! Reserva tu turno ahora y prepárate para una aventura inolvidable.",
+			"multimedia": [
+				{
+					"id_imagen": "sil1001",
+					"nombre_imagen": "imagen_1",
+					"descripcion": "inflables infantiles",
+					"url": "https://res.cloudinary.com/dmroa1p5p/image/upload/v1748733717/1-escape-room_dinjsa.webp"
+				},
+				{
+					"id_imagen": "sil1002",
+					"nombre_imagen": "imagen_2",
+					"descripcion": "inflables infantiles",
+					"url": "https://res.cloudinary.com/dmroa1p5p/image/upload/v1748733717/2-escape-room_ybjq8t.webp"
+				},
+				{
+					"id_imagen": "sil1003",
+					"nombre_imagen": "imagen_3",
+					"descripcion": "inflables infantiles",
+					"url": "https://res.cloudinary.com/dmroa1p5p/image/upload/v1748733717/3-escape-room_hh8vcf.webp"
+				},
+				{
+					"id_imagen": "sil1004",
+					"nombre_imagen": "imagen_4",
+					"descripcion": "inflables infantiles",
+					"url": "https://res.cloudinary.com/dmroa1p5p/image/upload/v1748733717/4-escape-room_wxchy4.webp"
+				},
+				{
+					"id_imagen": "sil1005",
+					"nombre_imagen": "imagen_5",
+					"descripcion": "inflables infantiles",
+					"url": "https://res.cloudinary.com/dmroa1p5p/image/upload/v1748733717/5-escape-room_z2kphv.webp"
+				},
+				{
+					"id_imagen": "sil1006",
+					"nombre_imagen": "imagen_6",
+					"descripcion": "inflables infantiles",
+					"url": "https://res.cloudinary.com/dmroa1p5p/image/upload/v1748733717/6-escape-room_d5ihuu.webp"
+				},
+				{
+					"id_imagen": "sil1007",
+					"nombre_imagen": "imagen_7",
+					"descripcion": "inflables infantiles",
+					"url": "https://res.cloudinary.com/dmroa1p5p/image/upload/v1748733718/7-escape-room_njk4d5.webp"
+				}
+			]
+		},
+		{
+			"id_salon": "0F126A",
+			"nombre": "Pininos",
+			"portada": "https://res.cloudinary.com/dmroa1p5p/image/upload/v1748733830/PININOS_desktop_h0o1qs.webp",
+			"descripcion": "Salon infantil para los más pequeños. Exclusivo para niños pequeños. Hasta 20 personas",
+			"resumen": [
+				"Nuestro salón está pensado especialmente para los más chiquitos, con una sala blanda diseñada para explorar, jugar y aprender de manera segura. Cada espacio está ambientado con colores suaves, texturas amigables y materiales adaptados a su desarrollo.",
+				"Contamos con juegos didácticos que estimulan la motricidad, el lenguaje y la socialización, en un entorno tranquilo y controlado. Todo está preparado para que puedan descubrir el mundo a su ritmo, mientras se divierten con libertad.",
+				"La seguridad y la contención son nuestras prioridades: nuestro personal está capacitado para acompañar a los niños en cada momento, brindándoles atención cercana y respetuosa, tanto en el juego libre como en las actividades guiadas.",
+				"Además del área de juegos, disponemos de zonas cómodas para adultos, sector de lactancia, y un espacio para compartir una merienda o celebrar un cumpleaños en un entorno íntimo y familiar.",
+				"Ofrecemos propuestas flexibles para eventos, encuentros de juego o sesiones personalizadas. Nuestro objetivo es que cada niño se sienta contenido, estimulado y feliz. ¡Venite a conocernos!"
+			],
+			"direccion": "Eva Perón 2340",
+			"estado": "disponible",
+			"precio": "26600",
+			"footer_tarjeta": "¡Un lugar pensado para los más pequños. Reserva tu turno ahora y prepárate para una aventura inolvidable.",
+			"multimedia": [
+				{
+					"id_imagen": "sil1001",
+					"nombre_imagen": "imagen_1",
+					"descripcion": "inflables infantiles",
+					"url": "https://res.cloudinary.com/dmroa1p5p/image/upload/v1748733717/1-escape-room_dinjsa.webp"
+				},
+				{
+					"id_imagen": "sil1002",
+					"nombre_imagen": "imagen_2",
+					"descripcion": "inflables infantiles",
+					"url": "https://res.cloudinary.com/dmroa1p5p/image/upload/v1748733717/2-escape-room_ybjq8t.webp"
+				},
+				{
+					"id_imagen": "sil1003",
+					"nombre_imagen": "imagen_3",
+					"descripcion": "inflables infantiles",
+					"url": "https://res.cloudinary.com/dmroa1p5p/image/upload/v1748733717/3-escape-room_hh8vcf.webp"
+				},
+				{
+					"id_imagen": "sil1004",
+					"nombre_imagen": "imagen_4",
+					"descripcion": "inflables infantiles",
+					"url": "https://res.cloudinary.com/dmroa1p5p/image/upload/v1748733717/4-escape-room_wxchy4.webp"
+				},
+				{
+					"id_imagen": "sil1005",
+					"nombre_imagen": "imagen_5",
+					"descripcion": "inflables infantiles",
+					"url": "https://res.cloudinary.com/dmroa1p5p/image/upload/v1748733717/5-escape-room_z2kphv.webp"
+				},
+				{
+					"id_imagen": "sil1006",
+					"nombre_imagen": "imagen_6",
+					"descripcion": "inflables infantiles",
+					"url": "https://res.cloudinary.com/dmroa1p5p/image/upload/v1748733717/6-escape-room_d5ihuu.webp"
+				},
+				{
+					"id_imagen": "sil1007",
+					"nombre_imagen": "imagen_7",
+					"descripcion": "inflables infantiles",
+					"url": "https://res.cloudinary.com/dmroa1p5p/image/upload/v1748733718/7-escape-room_njk4d5.webp"
+				}
+			]
+		},
+		{
+			"id_salon": "0F127A",
+			"nombre": "Globitos",
+			"portada": "https://res.cloudinary.com/dmroa1p5p/image/upload/v1748733825/globitos_desktop_dbpsgn.webp",
+			"descripcion": "Salas equipadas con variedad de juegos. Hasta 50 personas",
+			"resumen": [
+				"En Globitos creemos que cada infancia merece momentos mágicos. Nuestro salón está diseñado especialmente para que los más chicos jueguen, rían y descubran en un entorno seguro, colorido y lleno de alegría.",
+				"Contamos con una sala blanda ideal para primeros exploradores, juegos didácticos, rincones creativos y estaciones interactivas pensadas para despertar la curiosidad y el aprendizaje a través del juego.",
+				"Además de las zonas de juego, en Globitos disponemos de un espacio confortable para familias, cocina equipada, mobiliario infantil y ambientación adaptada para que cada evento se sienta como en casa.",
+				"Nos especializamos en cumpleaños y encuentros íntimos, con atención personalizada y opciones de animación, catering y decoración temática. Nuestro equipo acompaña cada detalle para que no te preocupes por nada.",
+				"Globitos es más que un salón: es un lugar para crear recuerdos tiernos y divertidos, donde cada niño es protagonista. ¡Te esperamos para vivir una experiencia que quedará flotando en la memoria como un globo al cielo!"
+			],
+			"direccion": "San Juan 230",
+			"estado": "disponible",
+			"precio": "26600",
+			"footer_tarjeta": "¡Contamos con variedad de juegos y ambientes. Reserva tu turno ahora, y celebrá un día inolvidable.",
+			"multimedia": [
+				{
+					"id_imagen": "sil1001",
+					"nombre_imagen": "imagen_1",
+					"descripcion": "inflables infantiles",
+					"url": "https://res.cloudinary.com/dmroa1p5p/image/upload/v1748733717/1-escape-room_dinjsa.webp"
+				},
+				{
+					"id_imagen": "sil1002",
+					"nombre_imagen": "imagen_2",
+					"descripcion": "inflables infantiles",
+					"url": "https://res.cloudinary.com/dmroa1p5p/image/upload/v1748733717/2-escape-room_ybjq8t.webp"
+				},
+				{
+					"id_imagen": "sil1003",
+					"nombre_imagen": "imagen_3",
+					"descripcion": "inflables infantiles",
+					"url": "https://res.cloudinary.com/dmroa1p5p/image/upload/v1748733717/3-escape-room_hh8vcf.webp"
+				},
+				{
+					"id_imagen": "sil1004",
+					"nombre_imagen": "imagen_4",
+					"descripcion": "inflables infantiles",
+					"url": "https://res.cloudinary.com/dmroa1p5p/image/upload/v1748733717/4-escape-room_wxchy4.webp"
+				},
+				{
+					"id_imagen": "sil1005",
+					"nombre_imagen": "imagen_5",
+					"descripcion": "inflables infantiles",
+					"url": "https://res.cloudinary.com/dmroa1p5p/image/upload/v1748733717/5-escape-room_z2kphv.webp"
+				},
+				{
+					"id_imagen": "sil1006",
+					"nombre_imagen": "imagen_6",
+					"descripcion": "inflables infantiles",
+					"url": "https://res.cloudinary.com/dmroa1p5p/image/upload/v1748733717/6-escape-room_d5ihuu.webp"
+				},
+				{
+					"id_imagen": "sil1007",
+					"nombre_imagen": "imagen_7",
+					"descripcion": "inflables infantiles",
+					"url": "https://res.cloudinary.com/dmroa1p5p/image/upload/v1748733718/7-escape-room_njk4d5.webp"
+				}
+			]
+		},
+		{
+			"id_salon": "0F128A",
+			"nombre": "GAMETIME",
+			"portada": "https://res.cloudinary.com/dmroa1p5p/image/upload/v1748733823/GAMETIME_desktop_mej7ft.webp",
+			"descripcion": "Salas de consolas y realidad virtual. Hasta 30 personas",
+			"resumen": [
+				"En Gametime llevamos la diversión al siguiente nivel con una sala especialmente equipada para amantes de los videojuegos. Sumergite en un mundo digital donde la tecnología y el entretenimiento se combinan para ofrecerte una experiencia única.",
+				"Contamos con consolas de última generación, estaciones de juego multijugador, pantallas gigantes y una zona exclusiva de realidad virtual que te permite explorar mundos inmersivos con total libertad.",
+				"Gametime es el lugar ideal para compartir con amigos, celebrar cumpleaños diferentes o simplemente vivir una jornada gamer intensa. Todo está ambientado con luces LED, sonido envolvente y un diseño moderno que potencia cada momento.",
+				"Nuestro equipo está siempre disponible para guiarte, explicar los juegos y asegurarse de que cada experiencia sea fluida, divertida y segura, tanto para chicos como para grandes.",
+				"Si buscás una propuesta innovadora, divertida y tecnológica, Gametime es tu mejor opción. ¡Ponete los auriculares, agarrá el control y que empiece el juego!"
+			],
+			"direccion": "Balcarce 2230",
+			"estado": "disponible",
+			"precio": "29600",
+			"footer_tarjeta": "¡Contamos con variedad de juegos y arcade. Reserva tu turno ahora, y celebrá un día inolvidable.",
+			"multimedia": [
+				{
+					"id_imagen": "sil1001",
+					"nombre_imagen": "imagen_1",
+					"descripcion": "inflables infantiles",
+					"url": "https://res.cloudinary.com/dmroa1p5p/image/upload/v1748733717/1-escape-room_dinjsa.webp"
+				},
+				{
+					"id_imagen": "sil1002",
+					"nombre_imagen": "imagen_2",
+					"descripcion": "inflables infantiles",
+					"url": "https://res.cloudinary.com/dmroa1p5p/image/upload/v1748733717/2-escape-room_ybjq8t.webp"
+				},
+				{
+					"id_imagen": "sil1003",
+					"nombre_imagen": "imagen_3",
+					"descripcion": "inflables infantiles",
+					"url": "https://res.cloudinary.com/dmroa1p5p/image/upload/v1748733717/3-escape-room_hh8vcf.webp"
+				},
+				{
+					"id_imagen": "sil1004",
+					"nombre_imagen": "imagen_4",
+					"descripcion": "inflables infantiles",
+					"url": "https://res.cloudinary.com/dmroa1p5p/image/upload/v1748733717/4-escape-room_wxchy4.webp"
+				},
+				{
+					"id_imagen": "sil1005",
+					"nombre_imagen": "imagen_5",
+					"descripcion": "inflables infantiles",
+					"url": "https://res.cloudinary.com/dmroa1p5p/image/upload/v1748733717/5-escape-room_z2kphv.webp"
+				},
+				{
+					"id_imagen": "sil1006",
+					"nombre_imagen": "imagen_6",
+					"descripcion": "inflables infantiles",
+					"url": "https://res.cloudinary.com/dmroa1p5p/image/upload/v1748733717/6-escape-room_d5ihuu.webp"
+				},
+				{
+					"id_imagen": "sil1007",
+					"nombre_imagen": "imagen_7",
+					"descripcion": "inflables infantiles",
+					"url": "https://res.cloudinary.com/dmroa1p5p/image/upload/v1748733718/7-escape-room_njk4d5.webp"
+				}
+			]
+		},
+		{
+			"id_salon": "0F129A",
+			"nombre": "Comando Paintball",
+			"portada": "https://res.cloudinary.com/dmroa1p5p/image/upload/v1748733821/COMANDO_PAINTBALL_desktop_eejvuc.webp",
+			"descripcion": "Diversión al aire libre con juegos de paintball. Hasta 100 personas",
+			"resumen": [
+				"En Comando Paintball te invitamos a vivir una aventura llena de acción al aire libre. Nuestro campo está diseñado para que sientas la emoción del combate en un entorno natural, seguro y totalmente controlado.",
+				"Con escenarios realistas, obstáculos estratégicos y equipamiento profesional, podrás ponerte en modo comando y disfrutar de partidas intensas con amigos, familia o compañeros de trabajo.",
+				"Ya sea que vengas por una celebración, un team building o simplemente a liberar tensiones, te garantizamos una experiencia cargada de adrenalina, risas y compañerismo.",
+				"Disponemos de todo lo necesario: protección, marcadoras, bolas biodegradables, instructores capacitados y zonas de descanso para recargar energías entre partida y partida.",
+				"Comando Paintball es la mejor opción para quienes buscan una jornada diferente, al aire libre y llena de diversión. ¡Prepará tu estrategia, apuntá bien y que comience la batalla!"
+			],
+			"direccion": "Balcarce 2230",
+			"estado": "disponible",
+			"precio": "29600",
+			"footer_tarjeta": "¡Contamos con variedad de juegos y arcade. Reserva tu turno ahora, y celebrá un día inolvidable.",
+			"multimedia": [
+				{
+					"id_imagen": "sil1001",
+					"nombre_imagen": "imagen_1",
+					"descripcion": "inflables infantiles",
+					"url": "https://res.cloudinary.com/dmroa1p5p/image/upload/v1748733717/1-escape-room_dinjsa.webp"
+				},
+				{
+					"id_imagen": "sil1002",
+					"nombre_imagen": "imagen_2",
+					"descripcion": "inflables infantiles",
+					"url": "https://res.cloudinary.com/dmroa1p5p/image/upload/v1748733717/2-escape-room_ybjq8t.webp"
+				},
+				{
+					"id_imagen": "sil1003",
+					"nombre_imagen": "imagen_3",
+					"descripcion": "inflables infantiles",
+					"url": "https://res.cloudinary.com/dmroa1p5p/image/upload/v1748733717/3-escape-room_hh8vcf.webp"
+				},
+				{
+					"id_imagen": "sil1004",
+					"nombre_imagen": "imagen_4",
+					"descripcion": "inflables infantiles",
+					"url": "https://res.cloudinary.com/dmroa1p5p/image/upload/v1748733717/4-escape-room_wxchy4.webp"
+				},
+				{
+					"id_imagen": "sil1005",
+					"nombre_imagen": "imagen_5",
+					"descripcion": "inflables infantiles",
+					"url": "https://res.cloudinary.com/dmroa1p5p/image/upload/v1748733717/5-escape-room_z2kphv.webp"
+				},
+				{
+					"id_imagen": "sil1006",
+					"nombre_imagen": "imagen_6",
+					"descripcion": "inflables infantiles",
+					"url": "https://res.cloudinary.com/dmroa1p5p/image/upload/v1748733717/6-escape-room_d5ihuu.webp"
+				},
+				{
+					"id_imagen": "sil1007",
+					"nombre_imagen": "imagen_7",
+					"descripcion": "inflables infantiles",
+					"url": "https://res.cloudinary.com/dmroa1p5p/image/upload/v1748733718/7-escape-room_njk4d5.webp"
+				}
+			]
+		},
+		{
+			"id_salon": "0F130A",
+			"nombre": "Comando Paintball",
+			"portada": "https://res.cloudinary.com/dmroa1p5p/image/upload/v1748733821/COMANDO_PAINTBALL_desktop_eejvuc.webp",
+			"descripcion": "Diversión al aire libre con juegos de paintball. Hasta 100 personas",
+			"resumen": [
+				"En Comando Paintball te invitamos a vivir una aventura llena de acción al aire libre. Nuestro campo está diseñado para que sientas la emoción del combate en un entorno natural, seguro y totalmente controlado.",
+				"Con escenarios realistas, obstáculos estratégicos y equipamiento profesional, podrás ponerte en modo comando y disfrutar de partidas intensas con amigos, familia o compañeros de trabajo.",
+				"Ya sea que vengas por una celebración, un team building o simplemente a liberar tensiones, te garantizamos una experiencia cargada de adrenalina, risas y compañerismo.",
+				"Disponemos de todo lo necesario: protección, marcadoras, bolas biodegradables, instructores capacitados y zonas de descanso para recargar energías entre partida y partida.",
+				"Comando Paintball es la mejor opción para quienes buscan una jornada diferente, al aire libre y llena de diversión. ¡Prepará tu estrategia, apuntá bien y que comience la batalla!"
+			],
+			"direccion": "Balcarce 2230",
+			"estado": "disponible",
+			"precio": "29600",
+			"footer_tarjeta": "¡Contamos con variedad de juegos y arcade. Reserva tu turno ahora, y celebrá un día inolvidable.",
+			"multimedia": [
+				{
+					"id_imagen": "sil1001",
+					"nombre_imagen": "imagen_1",
+					"descripcion": "inflables infantiles",
+					"url": "https://res.cloudinary.com/dmroa1p5p/image/upload/v1748733717/1-escape-room_dinjsa.webp"
+				},
+				{
+					"id_imagen": "sil1002",
+					"nombre_imagen": "imagen_2",
+					"descripcion": "inflables infantiles",
+					"url": "https://res.cloudinary.com/dmroa1p5p/image/upload/v1748733717/2-escape-room_ybjq8t.webp"
+				},
+				{
+					"id_imagen": "sil1003",
+					"nombre_imagen": "imagen_3",
+					"descripcion": "inflables infantiles",
+					"url": "https://res.cloudinary.com/dmroa1p5p/image/upload/v1748733717/3-escape-room_hh8vcf.webp"
+				},
+				{
+					"id_imagen": "sil1004",
+					"nombre_imagen": "imagen_4",
+					"descripcion": "inflables infantiles",
+					"url": "https://res.cloudinary.com/dmroa1p5p/image/upload/v1748733717/4-escape-room_wxchy4.webp"
+				},
+				{
+					"id_imagen": "sil1005",
+					"nombre_imagen": "imagen_5",
+					"descripcion": "inflables infantiles",
+					"url": "https://res.cloudinary.com/dmroa1p5p/image/upload/v1748733717/5-escape-room_z2kphv.webp"
+				},
+				{
+					"id_imagen": "sil1006",
+					"nombre_imagen": "imagen_6",
+					"descripcion": "inflables infantiles",
+					"url": "https://res.cloudinary.com/dmroa1p5p/image/upload/v1748733717/6-escape-room_d5ihuu.webp"
+				},
+				{
+					"id_imagen": "sil1007",
+					"nombre_imagen": "imagen_7",
+					"descripcion": "inflables infantiles",
+					"url": "https://res.cloudinary.com/dmroa1p5p/image/upload/v1748733718/7-escape-room_njk4d5.webp"
+				}
+			]
+		},
+		{
+			"id_salon": "0F131A",
+			"nombre": "Comando Paintball",
+			"portada": "https://res.cloudinary.com/dmroa1p5p/image/upload/v1748733821/arcoiris_desktop_cuwegl.webp",
+			"descripcion": "Salón multiple con varias opciones de juegos y servicios. Hasta 100 personas",
+			"resumen": [
+				"En Arcoiris te damos la bienvenida a un espacio donde la diversión no tiene edad. Nuestro salón fue diseñado para que chicos, adolescentes y adultos puedan disfrutar por igual de una experiencia colorida, segura y llena de alegría.",
+				"Contamos con zonas diferenciadas según las edades: juegos blandos y didácticos para los más pequeños, inflables gigantes y actividades interactivas para niños, y espacios recreativos modernos para los más grandes.",
+				"Además, ofrecemos servicio de animación, música en vivo, talleres temáticos, karaoke y más, todo en un ambiente decorado con luz natural, colores vibrantes y detalles pensados para sorprender en cada rincón.",
+				"Nuestra cocina equipada y el servicio de catering personalizado aseguran que cada festejo sea cómodo y sabroso para todos los invitados. También disponemos de mobiliario adaptable según el tipo de evento.",
+				"Arcoiris es el lugar ideal para celebrar cumpleaños, reuniones familiares o eventos escolares. ¡Un salón versátil y alegre, donde cada edad encuentra su espacio y cada momento se llena de color!"
+			],
+			"direccion": "Balcarce 2230",
+			"estado": "disponible",
+			"precio": "29600",
+			"footer_tarjeta": "¡Contamos con variedad de juegos y arcade. Reserva tu turno ahora, y celebrá un día inolvidable.",
+			"multimedia": [
+				{
+					"id_imagen": "sil1001",
+					"nombre_imagen": "imagen_1",
+					"descripcion": "inflables infantiles",
+					"url": "https://res.cloudinary.com/dmroa1p5p/image/upload/v1748733717/1-escape-room_dinjsa.webp"
+				},
+				{
+					"id_imagen": "sil1002",
+					"nombre_imagen": "imagen_2",
+					"descripcion": "inflables infantiles",
+					"url": "https://res.cloudinary.com/dmroa1p5p/image/upload/v1748733717/2-escape-room_ybjq8t.webp"
+				},
+				{
+					"id_imagen": "sil1003",
+					"nombre_imagen": "imagen_3",
+					"descripcion": "inflables infantiles",
+					"url": "https://res.cloudinary.com/dmroa1p5p/image/upload/v1748733717/3-escape-room_hh8vcf.webp"
+				},
+				{
+					"id_imagen": "sil1004",
+					"nombre_imagen": "imagen_4",
+					"descripcion": "inflables infantiles",
+					"url": "https://res.cloudinary.com/dmroa1p5p/image/upload/v1748733717/4-escape-room_wxchy4.webp"
+				},
+				{
+					"id_imagen": "sil1005",
+					"nombre_imagen": "imagen_5",
+					"descripcion": "inflables infantiles",
+					"url": "https://res.cloudinary.com/dmroa1p5p/image/upload/v1748733717/5-escape-room_z2kphv.webp"
+				},
+				{
+					"id_imagen": "sil1006",
+					"nombre_imagen": "imagen_6",
+					"descripcion": "inflables infantiles",
+					"url": "https://res.cloudinary.com/dmroa1p5p/image/upload/v1748733717/6-escape-room_d5ihuu.webp"
+				},
+				{
+					"id_imagen": "sil1007",
+					"nombre_imagen": "imagen_7",
+					"descripcion": "inflables infantiles",
+					"url": "https://res.cloudinary.com/dmroa1p5p/image/upload/v1748733718/7-escape-room_njk4d5.webp"
+				}
 			]
 		}
 	],
