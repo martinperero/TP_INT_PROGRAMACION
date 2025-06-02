@@ -108,6 +108,13 @@ div .carousel-indicators .preview-img {
 
 div.card{
     width: 30%;
+    margin: auto;
+    min-height: 35rem;
+}
+div.card img{
+    height: 18rem;
+    width: 100%;
+object-fit: cover; 
 }
 
 
