@@ -1,0 +1,68 @@
+document.addEventListener('DOMContentLoaded', () => {
+    const tbody = document.querySelector('#tabla tbody');
+
+    let salones = JSON.parse(localStorage.getItem('salones'));
+    if (!salones) {
+        fetch('base_de_datos.json')
+            .then(response => {
+                if (!response.ok) throw new Error('Error al cargar el json');
+                return response.json();
+            })
+            .then(data => {
+                salones = data.salones;
+                localStorage.setItem('salones', JSON.stringify(salones));
+                mostrarSalones(salones);
+            })
+            .catch(error => console.error('Error:', error));
+    } else {
+        mostrarSalones(salones);
+    }
+
+    function mostrarSalones(salones) {
+        tbody.innerHTML = '';
+        salones.forEach(salon => {
+            const fila = document.createElement('tr');
+            fila.innerHTML = `
+                <td>${salon.id_salon}</td>
+                <td>${salon.nombre}</td>
+                <td>
+                    <div class="media-item">
+                        <img src="${salon.portada}" width="100">
+                    </div>
+                </td>
+                <td>${salon.descripcion}</td>
+                <td>${salon.direccion}</td>
+                <td>${salon.estado}</td>
+                <td>${salon.precio}</td>
+                <td>
+                    ${salon.multimedia.map(media => `
+                        <div class="media-item">
+                            <img src="${media.url}" width="100"><br>
+                            <small>${media.descripcion}</small>
+                            <p>------------------</p>
+                        </div>
+                    `).join('')}
+                </td>
+                <td>
+                    <button class="rounded btn btn-outline-success my-2" onclick="window.location.href='editar.html?id=${salon.id_salon}'">Editar</button>
+                    <button class="rounded btn btn-outline-danger my-2" onclick="eliminarSalon('${salon.id_salon}')">Eliminar</button>
+                </td>
+            `;
+            tbody.appendChild(fila);
+        });
+    }
+
+    window.eliminarSalon = function(id) {
+        if (confirm('¿Seguro que querés eliminar el salón?')) {
+            salones = salones.filter(salon => salon.id_salon !== id);
+            localStorage.setItem('salones', JSON.stringify(salones));
+            mostrarSalones(salones);
+        }
+    };
+        document.getElementById('reiniciar').addEventListener('click', () => {
+        if (confirm('¿Estás seguro que quieres reiniciar la base de datos? Se perderán los cambios.')) {
+            localStorage.removeItem('salones');
+            location.reload();
+        }
+    });
+});
