@@ -426,165 +426,63 @@
 					"url": "https://res.cloudinary.com/dmroa1p5p/image/upload/v1748733718/7-escape-room_njk4d5.webp"
 				}
 			]
-		},
-		{
-			"id_salon": "0F130A",
-			"nombre": "Comando Paintball",
-			"portada": "https://res.cloudinary.com/dmroa1p5p/image/upload/v1748733821/COMANDO_PAINTBALL_desktop_eejvuc.webp",
-			"descripcion": "Diversión al aire libre con juegos de paintball. Hasta 100 personas",
-			"resumen": [
-				"En Comando Paintball te invitamos a vivir una aventura llena de acción al aire libre. Nuestro campo está diseñado para que sientas la emoción del combate en un entorno natural, seguro y totalmente controlado.",
-				"Con escenarios realistas, obstáculos estratégicos y equipamiento profesional, podrás ponerte en modo comando y disfrutar de partidas intensas con amigos, familia o compañeros de trabajo.",
-				"Ya sea que vengas por una celebración, un team building o simplemente a liberar tensiones, te garantizamos una experiencia cargada de adrenalina, risas y compañerismo.",
-				"Disponemos de todo lo necesario: protección, marcadoras, bolas biodegradables, instructores capacitados y zonas de descanso para recargar energías entre partida y partida.",
-				"Comando Paintball es la mejor opción para quienes buscan una jornada diferente, al aire libre y llena de diversión. ¡Prepará tu estrategia, apuntá bien y que comience la batalla!"
-			],
-			"direccion": "Balcarce 2230",
-			"estado": "disponible",
-			"precio": "29600",
-			"footer_tarjeta": "¡Contamos con variedad de juegos y arcade. Reserva tu turno ahora, y celebrá un día inolvidable.",
-			"multimedia": [
-				{
-					"id_imagen": "sil1001",
-					"nombre_imagen": "imagen_1",
-					"descripcion": "inflables infantiles",
-					"url": "https://res.cloudinary.com/dmroa1p5p/image/upload/v1748733717/1-escape-room_dinjsa.webp"
-				},
-				{
-					"id_imagen": "sil1002",
-					"nombre_imagen": "imagen_2",
-					"descripcion": "inflables infantiles",
-					"url": "https://res.cloudinary.com/dmroa1p5p/image/upload/v1748733717/2-escape-room_ybjq8t.webp"
-				},
-				{
-					"id_imagen": "sil1003",
-					"nombre_imagen": "imagen_3",
-					"descripcion": "inflables infantiles",
-					"url": "https://res.cloudinary.com/dmroa1p5p/image/upload/v1748733717/3-escape-room_hh8vcf.webp"
-				},
-				{
-					"id_imagen": "sil1004",
-					"nombre_imagen": "imagen_4",
-					"descripcion": "inflables infantiles",
-					"url": "https://res.cloudinary.com/dmroa1p5p/image/upload/v1748733717/4-escape-room_wxchy4.webp"
-				},
-				{
-					"id_imagen": "sil1005",
-					"nombre_imagen": "imagen_5",
-					"descripcion": "inflables infantiles",
-					"url": "https://res.cloudinary.com/dmroa1p5p/image/upload/v1748733717/5-escape-room_z2kphv.webp"
-				},
-				{
-					"id_imagen": "sil1006",
-					"nombre_imagen": "imagen_6",
-					"descripcion": "inflables infantiles",
-					"url": "https://res.cloudinary.com/dmroa1p5p/image/upload/v1748733717/6-escape-room_d5ihuu.webp"
-				},
-				{
-					"id_imagen": "sil1007",
-					"nombre_imagen": "imagen_7",
-					"descripcion": "inflables infantiles",
-					"url": "https://res.cloudinary.com/dmroa1p5p/image/upload/v1748733718/7-escape-room_njk4d5.webp"
-				}
-			]
-		},
-		{
-			"id_salon": "0F131A",
-			"nombre": "Comando Paintball",
-			"portada": "https://res.cloudinary.com/dmroa1p5p/image/upload/v1748733821/arcoiris_desktop_cuwegl.webp",
-			"descripcion": "Salón multiple con varias opciones de juegos y servicios. Hasta 100 personas",
-			"resumen": [
-				"En Arcoiris te damos la bienvenida a un espacio donde la diversión no tiene edad. Nuestro salón fue diseñado para que chicos, adolescentes y adultos puedan disfrutar por igual de una experiencia colorida, segura y llena de alegría.",
-				"Contamos con zonas diferenciadas según las edades: juegos blandos y didácticos para los más pequeños, inflables gigantes y actividades interactivas para niños, y espacios recreativos modernos para los más grandes.",
-				"Además, ofrecemos servicio de animación, música en vivo, talleres temáticos, karaoke y más, todo en un ambiente decorado con luz natural, colores vibrantes y detalles pensados para sorprender en cada rincón.",
-				"Nuestra cocina equipada y el servicio de catering personalizado aseguran que cada festejo sea cómodo y sabroso para todos los invitados. También disponemos de mobiliario adaptable según el tipo de evento.",
-				"Arcoiris es el lugar ideal para celebrar cumpleaños, reuniones familiares o eventos escolares. ¡Un salón versátil y alegre, donde cada edad encuentra su espacio y cada momento se llena de color!"
-			],
-			"direccion": "Balcarce 2230",
-			"estado": "disponible",
-			"precio": "29600",
-			"footer_tarjeta": "¡Contamos con variedad de juegos y arcade. Reserva tu turno ahora, y celebrá un día inolvidable.",
-			"multimedia": [
-				{
-					"id_imagen": "sil1001",
-					"nombre_imagen": "imagen_1",
-					"descripcion": "inflables infantiles",
-					"url": "https://res.cloudinary.com/dmroa1p5p/image/upload/v1748733717/1-escape-room_dinjsa.webp"
-				},
-				{
-					"id_imagen": "sil1002",
-					"nombre_imagen": "imagen_2",
-					"descripcion": "inflables infantiles",
-					"url": "https://res.cloudinary.com/dmroa1p5p/image/upload/v1748733717/2-escape-room_ybjq8t.webp"
-				},
-				{
-					"id_imagen": "sil1003",
-					"nombre_imagen": "imagen_3",
-					"descripcion": "inflables infantiles",
-					"url": "https://res.cloudinary.com/dmroa1p5p/image/upload/v1748733717/3-escape-room_hh8vcf.webp"
-				},
-				{
-					"id_imagen": "sil1004",
-					"nombre_imagen": "imagen_4",
-					"descripcion": "inflables infantiles",
-					"url": "https://res.cloudinary.com/dmroa1p5p/image/upload/v1748733717/4-escape-room_wxchy4.webp"
-				},
-				{
-					"id_imagen": "sil1005",
-					"nombre_imagen": "imagen_5",
-					"descripcion": "inflables infantiles",
-					"url": "https://res.cloudinary.com/dmroa1p5p/image/upload/v1748733717/5-escape-room_z2kphv.webp"
-				},
-				{
-					"id_imagen": "sil1006",
-					"nombre_imagen": "imagen_6",
-					"descripcion": "inflables infantiles",
-					"url": "https://res.cloudinary.com/dmroa1p5p/image/upload/v1748733717/6-escape-room_d5ihuu.webp"
-				},
-				{
-					"id_imagen": "sil1007",
-					"nombre_imagen": "imagen_7",
-					"descripcion": "inflables infantiles",
-					"url": "https://res.cloudinary.com/dmroa1p5p/image/upload/v1748733718/7-escape-room_njk4d5.webp"
-				}
-			]
 		}
 	],
-	"servicios": [
-		{
-			"ID_servicio": "0F123A",
-			"descripción": "extra 10 personas",
-			"precio": "50000"
-		},
-		{
-			"ID_servicio": "0F1363A",
-			"descripción": "catering + limpieza",
-			"precio": "50000"
-		},
-		{
-			"ID_servicio": "0F123A",
-			"descripción": "catering extra 10 personas",
-			"precio": "50780"
-		}
-	],
-	"presupuestos": [
-		{
-			"id_presupuesto": "c01v522",
-			"Apellido": "...",
-			"nombre": "...",
-			"fecha": "12/12/666",
-			"Temática": "infantil al aire libre",
-			"valor total": "2563669",
-			"Servicios seleccionados": "..."
-		}
-	],
-	"usuarios": [
-		{
-			"ID_user": "0F123A",
-			"nombre": "Agustin",
-			"apellido": "Merele",
-			"correo": "destapa_zanjas2000Qgmail.com",
-			"PIN": "7963"
-		}
-	]
+    "servicios": [
+        {
+            "ID_servicio": "0F123A",
+            "descripción": "Personas extra",
+            "precio": "5000"
+        },
+        {
+            "ID_servicio": "0F1363A",
+            "descripción": "Limpieza",
+            "precio": "50000"
+        },
+        {
+            "ID_servicio": "0F123B",
+            "descripción": "Catering (por persona)",
+            "precio": "2500"
+        },
+        {
+            "ID_servicio": "0F123C",
+            "descripción": "Animadores",
+            "precio": "30000"
+        },
+        {
+            "ID_servicio": "0F123D",
+            "descripción": "Decoración Temática",
+            "precio": "40000"
+        },
+        {
+            "ID_servicio": "0F123E",
+            "descripción": "Fotografía Profesional",
+            "precio": "50000"
+        },
+        {
+            "ID_servicio": "0F123F",
+            "descripción": "Música en Vivo o DJ",
+            "precio": "35000"
+        }
+    ],
+    "presupuestos": [
+        {
+            "id_presupuesto": "c01v522",
+            "Apellido": "...",
+            "nombre": "...",
+            "fecha": "12/12/666",
+            "Temática": "infantil al aire libre",
+            "valor total": "2563669",
+            "Servicios seleccionados": "..."
+        }
+    ],
+    "usuarios": [
+        {
+            "ID_user": "0F123A",
+            "nombre": "Agustin",
+            "apellido": "Merele",
+            "correo": "trabajo@gmail.com",
+            "PIN": "7963"
+        }
+    ]
 }
