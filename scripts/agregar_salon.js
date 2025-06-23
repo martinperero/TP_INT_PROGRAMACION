@@ -1,16 +1,18 @@
-document.getElementById("agregar").addEventListener("click", function () {
+document.getElementById("form_agregar_salon").addEventListener("submit", function (e) {
+    e.preventDefault();
+
     const salones = JSON.parse(localStorage.getItem("salones")) || [];
 
     const nuevoSalon = {
-        id_salon: prompt("ID del salón:"),
-        nombre: prompt("Nombre:"),
-        portada: prompt("URL portada:"),
-        resumen: prompt("Resumen:"),
-        descripcion: prompt("Descripción:"),
-        direccion: prompt("Dirección:"),
+        id_salon: document.getElementById("id_salon").value.trim(),
+        nombre: document.getElementById("nombre").value.trim(),
+        portada: document.getElementById("portada").value.trim(),
+        resumen: document.getElementById("resumen").value.trim(),
+        descripcion: document.getElementById("descripcion").value.trim(),
+        direccion: document.getElementById("direccion").value.trim(),
         estado: "Disponible",
-        precio: prompt("Precio:"),
-        footer_tarjeta: prompt("Footer tarjeta:"),
+        precio: document.getElementById("precio").value.trim(),
+        footer_tarjeta: document.getElementById("footer_tarjeta").value.trim(),
         multimedia: []
     };
 
@@ -19,6 +21,7 @@ document.getElementById("agregar").addEventListener("click", function () {
         localStorage.setItem("salones", JSON.stringify(salones));
         alert("Salón agregado correctamente.");
         location.reload();
+        window.location.href = 'tabla.html';
     } else {
         alert("Los campos ID, Nombre, Descripción y Dirección son obligatorios.");
     }
