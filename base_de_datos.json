@@ -4,7 +4,7 @@
 			"id_salon": "0F123A",
 			"nombre": "LOCKED",
 			"portada": "https://res.cloudinary.com/dmroa1p5p/image/upload/v1748733827/locked_desktop_nxh5ta.webp",
-			"descripcion": "Salon infantil para 20 personas",
+			"descripcion":"En LOCKED ofrecemos una experiencia única de escape room, donde podrás disfrutar de un juego de ingenio y aventura con amigos, familiares o compañeros de trabajo.",
 			"resumen": [
 				"En LOCKED ofrecemos una experiencia única de escape room, donde podrás disfrutar de un juego de ingenio y aventura con amigos, familiares o compañeros de trabajo. Nuestros salones están diseñados para desafiar tu mente y poner a prueba tus habilidades de resolución de problemas.",
 				"Cada uno de nuestros salones cuenta con una temática única y emocionante, desde misterios antiguos hasta aventuras futuristas. Te invitamos a sumergirte en un mundo lleno de enigmas y sorpresas, donde deberás trabajar en equipo para resolver los acertijos y escapar antes de que se acabe el tiempo.",
@@ -65,7 +65,7 @@
 			"id_salon": "0F124A",
 			"nombre": "Zona de diversion",
 			"portada": "https://res.cloudinary.com/dmroa1p5p/image/upload/v1748733836/ZONADEDIVERSION_desktop_uuyqe9.webp",
-			"descripcion": "Salon infantil, varias edades. Hasta 100 personas",
+			"descripcion": "En nuestro salón infantil inflable, los más pequeños disfrutan de un mundo lleno de color, saltos y alegría. Contamos con estructuras inflables seguras y temáticas que invitan a la diversión sin límites para todas las edades.",
 			"resumen": [
 				"En nuestro salón infantil inflable, los más pequeños disfrutan de un mundo lleno de color, saltos y alegría. Contamos con estructuras inflables seguras y temáticas que invitan a la diversión sin límites para todas las edades.",
 				"Cada rincón está pensado para estimular la imaginación, con castillos, toboganes, túneles y zonas de juegos que transforman cualquier celebración en una experiencia inolvidable. La seguridad y el entretenimiento van de la mano en nuestro espacio.",
@@ -126,7 +126,7 @@
 			"id_salon": "0F125A",
 			"nombre": "Rebotín",
 			"portada": "https://res.cloudinary.com/dmroa1p5p/image/upload/v1748733833/REBOTIN_desktop_squkbp.webp",
-			"descripcion": "Salon infantil, parque de inflables. Hasta 50 personas",
+			"descripcion": "Rebotín es el parque de inflables y juegos donde la diversión rebota sin parar. Un espacio lleno de color, energía y aventura pensado para que los chicos disfruten como nunca en un entorno seguro y supervisado.",
 			"resumen": [
 				"Rebotín es el parque de inflables y juegos donde la diversión rebota sin parar. Un espacio lleno de color, energía y aventura pensado para que los chicos disfruten como nunca en un entorno seguro y supervisado.",
 				"Desde gigantescos castillos inflables hasta zonas de trepado, toboganes y obstáculos, cada rincón de Rebotín está diseñado para estimular el movimiento, la imaginación y la alegría. ¡Ideal para cumpleaños, salidas escolares o simplemente un día de pura diversión!",
@@ -187,7 +187,7 @@
 			"id_salon": "0F126A",
 			"nombre": "Pininos",
 			"portada": "https://res.cloudinary.com/dmroa1p5p/image/upload/v1748733830/PININOS_desktop_h0o1qs.webp",
-			"descripcion": "Salon infantil para los más pequeños. Exclusivo para niños pequeños. Hasta 20 personas",
+			"descripcion": "Nuestro salón está pensado especialmente para los más chiquitos, con una sala blanda diseñada para explorar, jugar y aprender de manera segura. Cada espacio está ambientado con colores suaves, texturas amigables y materiales adaptados a su desarrollo.",
 			"resumen": [
 				"Nuestro salón está pensado especialmente para los más chiquitos, con una sala blanda diseñada para explorar, jugar y aprender de manera segura. Cada espacio está ambientado con colores suaves, texturas amigables y materiales adaptados a su desarrollo.",
 				"Contamos con juegos didácticos que estimulan la motricidad, el lenguaje y la socialización, en un entorno tranquilo y controlado. Todo está preparado para que puedan descubrir el mundo a su ritmo, mientras se divierten con libertad.",
@@ -248,7 +248,7 @@
 			"id_salon": "0F127A",
 			"nombre": "Globitos",
 			"portada": "https://res.cloudinary.com/dmroa1p5p/image/upload/v1748733825/globitos_desktop_dbpsgn.webp",
-			"descripcion": "Salas equipadas con variedad de juegos. Hasta 50 personas",
+			"descripcion": "En Globitos creemos que cada infancia merece momentos mágicos. Nuestro salón está diseñado especialmente para que los más chicos jueguen, rían y descubran en un entorno seguro, colorido y lleno de alegría.",
 			"resumen": [
 				"En Globitos creemos que cada infancia merece momentos mágicos. Nuestro salón está diseñado especialmente para que los más chicos jueguen, rían y descubran en un entorno seguro, colorido y lleno de alegría.",
 				"Contamos con una sala blanda ideal para primeros exploradores, juegos didácticos, rincones creativos y estaciones interactivas pensadas para despertar la curiosidad y el aprendizaje a través del juego.",
@@ -309,7 +309,7 @@
 			"id_salon": "0F128A",
 			"nombre": "GAMETIME",
 			"portada": "https://res.cloudinary.com/dmroa1p5p/image/upload/v1748733823/GAMETIME_desktop_mej7ft.webp",
-			"descripcion": "Salas de consolas y realidad virtual. Hasta 30 personas",
+			"descripcion": "En Gametime llevamos la diversión al siguiente nivel con una sala especialmente equipada para amantes de los videojuegos. Sumergite en un mundo digital donde la tecnología y el entretenimiento se combinan para ofrecerte una experiencia única.",
 			"resumen": [
 				"En Gametime llevamos la diversión al siguiente nivel con una sala especialmente equipada para amantes de los videojuegos. Sumergite en un mundo digital donde la tecnología y el entretenimiento se combinan para ofrecerte una experiencia única.",
 				"Contamos con consolas de última generación, estaciones de juego multijugador, pantallas gigantes y una zona exclusiva de realidad virtual que te permite explorar mundos inmersivos con total libertad.",
@@ -370,7 +370,7 @@
 			"id_salon": "0F129A",
 			"nombre": "Comando Paintball",
 			"portada": "https://res.cloudinary.com/dmroa1p5p/image/upload/v1748733821/COMANDO_PAINTBALL_desktop_eejvuc.webp",
-			"descripcion": "Diversión al aire libre con juegos de paintball. Hasta 100 personas",
+			"descripcion": "En Comando Paintball te invitamos a vivir una aventura llena de acción al aire libre. Nuestro campo está diseñado para que sientas la emoción del combate en un entorno natural, seguro y totalmente controlado.",
 			"resumen": [
 				"En Comando Paintball te invitamos a vivir una aventura llena de acción al aire libre. Nuestro campo está diseñado para que sientas la emoción del combate en un entorno natural, seguro y totalmente controlado.",
 				"Con escenarios realistas, obstáculos estratégicos y equipamiento profesional, podrás ponerte en modo comando y disfrutar de partidas intensas con amigos, familia o compañeros de trabajo.",

@@ -4,9 +4,60 @@ function capturarEvento() {
         button.addEventListener("click", () => {
             const salonId = button.getAttribute("data-id"); // Obtiene el ID del salón
             localStorage.setItem("salonSeleccionado", salonId); // Guarda el ID en localStorage
-            window.location.href = "plantilla.html"; // Redirige a la plantilla
+            window.location.href = "plantilla_salones.html"; // Redirige a la plantilla
         });
     });
+}
+
+//Funcion para crear el catalogo de forma dinamica
+function crearCatalogo() {
+    fetch("base_de_datos.json")
+        .then(response => response.json())
+        .then(data => {
+            const catalogoContainer = document.getElementById("tarjetas_desktop");
+            if (!catalogoContainer) {
+                console.error("No se encontró el contenedor del catálogo.");
+                return;
+            }
+
+            data.salones.forEach(salon => {
+                const card = document.createElement("div");
+                card.classList.add("card", "desktop", "d-flex", "flex-column", "color_card");
+
+                const img = document.createElement("img");
+                img.src = salon.portada || "imagen_default.jpg";
+                img.classList.add("card-img-top", "img_card");
+                img.alt = salon.nombre;
+
+                const cardBody = document.createElement("div");
+                cardBody.classList.add("card-body");
+
+                const title = document.createElement("h5");
+                title.classList.add("card-title");
+                title.textContent = salon.nombre;
+
+                const description = document.createElement("p");
+                description.classList.add("card-text");
+                description.textContent = salon.descripcion;
+
+                const button = document.createElement("button");
+                button.classList.add("btn", "btn-primary", "mas-info", "boton_card");
+                button.setAttribute("data-id", salon.id_salon);
+                button.textContent = "Más información";
+
+                cardBody.appendChild(title);
+                cardBody.appendChild(description);
+                cardBody.appendChild(button);
+                card.appendChild(img);
+                card.appendChild(cardBody);
+
+                catalogoContainer.appendChild(card);
+            });
+
+            // Reaplicar el evento a los nuevos botones
+            capturarEvento();
+        })
+        .catch(error => console.error("Error cargando JSON:", error));
 }
 
 // Función para cargar los datos del salón en la plantilla
@@ -40,7 +91,7 @@ function cargarSalon() {
                 imgPrincipal.src = salon.portada || "imagen_default.jpg";
             }
 
-            // Descripción
+            // Descripción completa
             const resumenDiv = document.getElementById("salon_resumen");
             if (resumenDiv && Array.isArray(salon.resumen)) {
                 resumenDiv.innerHTML = "";
@@ -50,6 +101,11 @@ function cargarSalon() {
                     pElement.textContent = parrafo;
                     resumenDiv.appendChild(pElement);
                 });
+            }
+            // Descripción de la tarjeta
+            const resumenTarjeta = document.getElementById("descripcion");
+            if (resumenTarjeta) {
+                resumenTarjeta.textContent = `${salon.descripcion}`;
             }
 
             // Carrusel
@@ -137,5 +193,6 @@ function redirigirAReserva() {
 // Ejecutar funciones cuando el DOM esté listo
 document.addEventListener("DOMContentLoaded", () => {
     capturarEvento();
+    crearCatalogo();
     cargarSalon();
 });
