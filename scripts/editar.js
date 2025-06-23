@@ -38,9 +38,11 @@ document.addEventListener('DOMContentLoaded', () => {
         document.getElementById('nombre').value = salon.nombre;
         document.getElementById('portada').value = salon.portada || '';
         document.getElementById('descripcion').value = salon.descripcion;
+        document.getElementById('resumen').value = salon.resumen;
         document.getElementById('direccion').value = salon.direccion;
         document.getElementById('estado').value = salon.estado;
         document.getElementById('precio').value = salon.precio;
+        document.getElementById('footer_tarjeta').value = salon.footer_tarjeta;
 
 
         document.getElementById('formEditar').addEventListener('submit', e => {
@@ -51,9 +53,11 @@ document.addEventListener('DOMContentLoaded', () => {
                 salones[tabla].nombre = document.getElementById('nombre').value;
                 salones[tabla].portada = document.getElementById('portada').value.trim();
                 salones[tabla].descripcion = document.getElementById('descripcion').value;
+                salones[tabla].resumen = document.getElementById('resumen').value;
                 salones[tabla].direccion = document.getElementById('direccion').value;
                 salones[tabla].estado = document.getElementById('estado').value;
                 salones[tabla].precio = parseFloat(document.getElementById('precio').value);
+                salones[tabla].footer_tarjeta = document.getElementById('footer_tarjeta').value;
                 localStorage.setItem('salones', JSON.stringify(salones));
                 alert('Salón editado');
                 window.location.href = 'tabla.html';
