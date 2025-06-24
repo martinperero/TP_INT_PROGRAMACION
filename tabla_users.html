@@ -46,38 +46,36 @@
         </nav>
         </div>
     </header>
-    <section id="busqueda_salones" class="container-fluid m-0 p-0">
+    <section id="busqueda_usuarios" class="container-fluid m-0 p-0">
+        <div class="d-flex justify-content-end align-items-center">
+            <a href="tabla.html"><button class="btn btn-danger rounded-1 p-2 m-3" id="volver" type="button">Volver</button></a>
+        </div>
         <div class="container-fluid d-flex align-items-center justify-content-center">
             <div class="container h-75 my-4 p-4 text-center rounded-1 border border-1">
-                <h2 class="my-2">Buscador de Salones</h2>
+                <h2 class="my-2">Buscador de Usuarios</h2>
                 <form class="d-flex justify-content-center align-items-center">
-                    <input type="text" id="buscar" class="form-control w-50" placeholder="Buscar salón" onkeyup="buscarEnTabla()">
+                    <input type="text" id="buscar_usuarios" class="form-control w-50" placeholder="Buscar usuario" onkeyup="buscarEnTablaUsers()">
                 </form>
             </div>
         </div>
     </section>
-    <section id="tabla_salones">
+    <section id="tabla_users">
         <div class="container-fluid d-flex align-item-center justify-content-center">
             <div class="container h-75 my-auto text-center rounded-4">
-                <h2 class="my-2">Catálogo de Salones disponibles</h2>
-                <a href="agregar.html"><button class="btn btn-primary rounded-1 p-4 m-3" id="agregar" type="button">Agregar Salón</button></a>
-                <a href="tabla_users.html"><button class="btn btn-secondary rounded-1 p-4 m-3" id="users" type="button">Ver Usuarios</button></a>
-                <table id="tabla" class="table table-striped table-bordered mt-3 p-2 justify-content-center align-items-center">
+                <h2 class="my-2">Usuarios</h2>
+                <table id="tabla_datos_usuario" class="table table-striped table-bordered mt-3 p-2 justify-content-center align-items-center">
                     <thead>
                         <tr>
                             <th>ID</th>
+                            <th>Nombre de Usuario</th>
                             <th>Nombre</th>
-                            <th>Portada</th>
-                            <th>Descripción</th>
-                            <th>Dirección</th>
-                            <th>Estado</th>
-                            <th>Precio</th>
-                            <th>Acciones</th>
+                            <th>Apellido</th>
+                            <th>Correo</th>
+                            <th>Teléfono</th>
                         </tr>
                     </thead>
                     <tbody>
                     </tbody>
-                    <button class="btn btn-danger rounded-1 p-4 m-3" id="reiniciar">Reiniciar base de datos</button>
                 </table>
                 <button id="ir_arriba" class="btn btn-primary position-fixed bottom-0 end-0 m-4 d-none">
                     <i class="bi bi-arrow-up-short fs-3"></i>
@@ -121,8 +119,8 @@
             </div>
         </div>
     </footer>
-    <script src="scripts/control_salones.js"></script>
-    <script src="scripts/buscador.js"></script>
+    <script src="scripts/listar_users.js"></script>
+    <script src="scripts/buscador_users.js"></script>
     <script src="scripts/ir_arriba.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js" integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO" crossorigin="anonymous"></script>
 </body>
