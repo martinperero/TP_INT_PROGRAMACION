@@ -19,46 +19,71 @@ function crearCatalogo() {
                 console.error("No se encontró el contenedor del catálogo.");
                 return;
             }
+            catalogoContainer.innerHTML = ''; // Limpia el contenedor antes de añadir
 
-            data.salones.forEach(salon => {
+            let allSalones = data.salones; // Salones desde el JSON
+            const salonesLocalStorage = JSON.parse(localStorage.getItem("salones")) || []; // Salones desde localStorage
+
+            // Combina los salones del JSON y localStorage
+            let combinedSalones = allSalones.concat(salonesLocalStorage);
+
+            //evitar repeticiones
+            const uniqueSalones = [];
+            const seenIds = new Set();
+
+            combinedSalones.forEach(salon => {
+                if (salon.id_salon && !seenIds.has(salon.id_salon)) {
+                    uniqueSalones.push(salon);
+                    seenIds.add(salon.id_salon);
+                } else if (!salon.id_salon) {
+                    console.warn("Salón sin 'id_salon' encontrado, no será renderizado:", salon);
+                }
+            });
+
+            uniqueSalones.forEach(salon => { 
                 const card = document.createElement("div");
                 card.classList.add("card", "desktop", "d-flex", "flex-column", "color_card");
 
                 const img = document.createElement("img");
-                img.src = salon.portada || "imagen_default.jpg";
+                img.src = salon.portada || "imagen_default.jpg"; 
                 img.classList.add("card-img-top", "img_card");
-                img.alt = salon.nombre;
+                img.alt = salon.nombre || "Imagen de salón"; 
 
                 const cardBody = document.createElement("div");
                 cardBody.classList.add("card-body");
 
                 const title = document.createElement("h5");
                 title.classList.add("card-title");
-                title.textContent = salon.nombre;
+                title.textContent = salon.nombre || "Nombre Desconocido";
 
                 const description = document.createElement("p");
                 description.classList.add("card-text");
-                description.textContent = salon.descripcion;
+                description.textContent = salon.descripcion || "Descripción no disponible."; 
 
                 const button = document.createElement("button");
                 button.classList.add("btn", "btn-primary", "mas-info", "boton_card");
-                button.setAttribute("data-id", salon.id_salon);
+                button.setAttribute("data-id", salon.id_salon); 
                 button.textContent = "Más información";
 
                 cardBody.appendChild(title);
                 cardBody.appendChild(description);
-                cardBody.appendChild(button);
+                // Solo añadir el botón si el id_salon existe para evitar errores
+                if (salon.id_salon) {
+                    cardBody.appendChild(button);
+                }
+
                 card.appendChild(img);
                 card.appendChild(cardBody);
 
                 catalogoContainer.appendChild(card);
             });
 
-            // Reaplicar el evento a los nuevos botones
+            // Llama a capturarEvento() UNA SOLA VEZ, DESPUÉS de que todas las tarjetas se han añadido al DOM
             capturarEvento();
         })
-        .catch(error => console.error("Error cargando JSON:", error));
+        .catch(error => console.error("Error cargando JSON o salones de localStorage:", error));
 }
+
 
 // Función para cargar los datos del salón en la plantilla
 function cargarSalon() {

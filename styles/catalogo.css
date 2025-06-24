@@ -15,7 +15,7 @@
 div.card.desktop{
     flex: 0 0 calc(33.333% - 1.5rem);
     max-width: calc(33.333% - 1.5rem);
-    height: 30rem; 
+    height: 38rem; 
     margin-bottom: 1rem; 
     display: flex;
     flex-direction: column;
@@ -42,7 +42,8 @@ div.card .img_card{
     box-shadow: blueviolet 0 0 0.5rem;
 }
 .card .boton_card, div.descripcion_slide .boton_card{
-    margin: 1% 1%;
+    margin: 2rem;
+    margin-top: auto;
     background-color: rgb(193, 193, 248);
     color: rgb(0, 0, 0);
     border-color: rgb(193, 193, 248);
