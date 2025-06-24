@@ -1,4 +1,6 @@
 document.addEventListener('DOMContentLoaded', () => {
+    if (!checkAdminAccess()) return; // Verifica si el usuario es admin o moderator para acceder a la página
+
     const tbody = document.querySelector('#tabla tbody');
 
     let salones = JSON.parse(localStorage.getItem('salones'));
@@ -35,7 +37,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 <td>${salon.estado}</td>
                 <td>${salon.precio}</td>
                 <td>
-                    <button class="rounded btn btn-outline-success my-2" onclick="window.location.href='editar.html?id=${salon.id_salon}'">Editar</button>
+                    <button class="rounded btn btn-outline-success my-2" onclick="editarSalon('${salon.id_salon}')">Editar</button>
                     <button class="rounded btn btn-outline-danger my-2" onclick="eliminarSalon('${salon.id_salon}')">Eliminar</button>
                 </td>
             `;
@@ -43,17 +45,37 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-    window.eliminarSalon = function(id) {
-        if (confirm('¿Seguro que querés eliminar el salón?')) {
-            salones = salones.filter(salon => salon.id_salon !== id);
-            localStorage.setItem('salones', JSON.stringify(salones));
-            mostrarSalones(salones);
+    window.editarSalon = function(id) {
+        const userRole = sessionStorage.getItem('userRole');
+        if (userRole === 'admin') {
+            window.location.href = `editar.html?id=${id}`;
+        } else {
+            alert('No tienes permisos para editar salones.');
         }
     };
-        document.getElementById('reiniciar').addEventListener('click', () => {
-        if (confirm('¿Estás seguro que quieres reiniciar la base de datos? Se perderán los cambios.')) {
-            localStorage.removeItem('salones');
-            location.reload();
+
+    window.eliminarSalon = function(id) {
+        const userRole = sessionStorage.getItem('userRole');
+        if (userRole === 'admin') {
+            if (confirm('¿Seguro que querés eliminar el salón?')) {
+                salones = salones.filter(salon => salon.id_salon !== id);
+                localStorage.setItem('salones', JSON.stringify(salones));
+                mostrarSalones(salones);
+            }
+        } else {
+            alert('No tienes permisos para eliminar salones.');
+        }
+    };
+
+    document.getElementById('reiniciar').addEventListener('click', () => {
+        const userRole = sessionStorage.getItem('userRole');
+        if (userRole === 'admin') {
+            if (confirm('¿Estás seguro que quieres reiniciar la base de datos? Se perderán los cambios.')) {
+                localStorage.removeItem('salones');
+                location.reload();
+            }
+        } else {
+            alert('No tienes permisos para reiniciar la base de datos.');
         }
     });
 });

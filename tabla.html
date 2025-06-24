@@ -12,38 +12,38 @@
 <body id="body" class="container-fluid m-0 p-0">
     <header class="d-flex justify-content-between align-items-center p-3 w-100">
         <div class="align-items-center w-100">
-        <nav class="navbar navbar-expand-md">
-            <div class="container-fluid">
-                <div class="w-25 d-flex">
-                    <img id="logo" src="media/logoIDW.png" alt="Logo de la empresa" class="container img-fluid align-items-center justify-content-center">
+            <nav class="navbar navbar-expand-md">
+                <div class="container-fluid">
+                    <div class="w-25 d-flex">
+                        <img id="logo" src="media/logoIDW.png" alt="Logo de la empresa" class="container img-fluid align-items-center justify-content-center">
+                    </div>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link fs-5 p-4 m-0 rounded" href="index.html">Inicio</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link fs-5 p-4 m-0 rounded" href="catalogo.html">Catálogo</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link fs-5 p-4 m-0 rounded" href="nosotros.html">¿Quiénes somos?</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link fs-5 p-4 m-0 rounded" href="turnos.html">Turnos</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link fs-5 p-4 m-0 rounded" href="contacto.html">Contacto</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link fs-5 p-4 m-0 rounded" href="preguntas.html">FAQ'S</a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav">
-                        <li class="nav-item">
-                            <a class="nav-link fs-5 p-4 m-0 rounded" href="index.html">Inicio</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link fs-5 p-4 m-0 rounded" href="catalogo.html">Catálogo</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link fs-5 p-4 m-0 rounded" href="nosotros.html">¿Quiénes somos?</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link fs-5 p-4 m-0 rounded" href="turnos.html">Turnos</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link fs-5 p-4 m-0 rounded" href="contacto.html">Contacto</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link fs-5 p-4 m-0 rounded" href="preguntas.html">FAQ'S</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
+            </nav>
         </div>
     </header>
     <section id="busqueda_salones" class="container-fluid m-0 p-0">
@@ -75,10 +75,11 @@
                             <th>Acciones</th>
                         </tr>
                     </thead>
-                    <tbody>
+                    <tbody id="tablaBody">
+                        
                     </tbody>
-                    <button class="btn btn-danger rounded-1 p-4 m-3" id="reiniciar">Reiniciar base de datos</button>
                 </table>
+                <button class="btn btn-danger rounded-1 p-4 m-3" id="reiniciar">Reiniciar base de datos</button>
                 <button id="ir_arriba" class="btn btn-primary position-fixed bottom-0 end-0 m-4 d-none">
                     <i class="bi bi-arrow-up-short fs-3"></i>
                 </button>
@@ -121,9 +122,27 @@
             </div>
         </div>
     </footer>
+    <script src="scripts/auth.js"></script>
     <script src="scripts/control_salones.js"></script>
     <script src="scripts/buscador.js"></script>
     <script src="scripts/ir_arriba.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js" integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO" crossorigin="anonymous"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const userRole = sessionStorage.getItem('userRole');
+            const editButtons = document.querySelectorAll('button[onclick*="editSalon"], #agregar, #users, #reiniciar');
+            const tableBody = document.getElementById('tablaBody');
+
+            // si es mod no lo deja usar el boton
+            if (userRole === 'moderator') {
+                editButtons.forEach(button => {
+                    button.disabled = true;
+                    button.classList.add('disabled'); // Estilo de Bootstrap
+                });
+            }
+
+        
+        });
+    </script>
 </body>
 </html>

@@ -1,73 +1,57 @@
-/*
-
-
 document.getElementById('loginForm').addEventListener('submit', async function(event) {
     event.preventDefault();
-    const nombre = document.getElementById('nombre').value.trim();
-    const correo = document.getElementById('correo').value.trim();
-    const clave = document.getElementById('clave').value.trim();
+    const username = document.getElementById('username').value.trim();
+    const password = document.getElementById('password').value.trim();
 
     try {
-        const response = await fetch('base_de_datos.json');
-        if (!response.ok) throw new Error('Error al cargar el archivo JSON');
+        const response = await fetch('https://dummyjson.com/auth/login', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({
+                username: username,
+                password: password,
+                expiresInMins: 30
+            })
+        });
+
+        if (!response.ok) throw new Error('Credenciales inválidas');
+
         const data = await response.json();
-        const usuario = data.usuarios.find(user =>
+        console.log('Respuesta de login:', data);
+        const accessToken = data.accessToken;
 
-            user.nombre.toLowerCase() === nombre.toLowerCase() &&
-            user.correo.toLowerCase() === correo.toLowerCase() &&
+        if (accessToken) {
+            
+            const usersResponse = await fetch('https://dummyjson.com/users');
+            if (!usersResponse.ok) throw new Error('Error al cargar la lista de usuarios');
+            const usersData = await usersResponse.json();
+            const user = usersData.users.find(u => u.username === username);
+            const role = user ? user.role || 'user' : 'user'; // Obtener rol
 
-            user.PIN === clave
-        );
+            console.log('Usuario encontrado:', user); 
+            console.log('Rol asignado:', role);
 
-        if (usuario) {
-
-
-            alert('¡Inicio de sesión exitoso! Bienvenido, ' + usuario.nombre);
+            // Guardar el accessToken y el rol en sessionStorage
+            sessionStorage.setItem('accessToken', accessToken);
+            sessionStorage.setItem('userRole', role);
+            alert('¡Inicio de sesión exitoso! Bienvenido, ' + username + ' (' + role + ')');
+            // Redirigir según el rol
+            window.location.href = (role === 'user') ? 'catalogo.html' : 'tabla.html';
         } else {
-
-            alert('Error: Nombre, correo o contraseña incorrectos.');
+            alert('Error: Credenciales incorrectas.');
         }
     } catch (error) {
-
-        console.error('Error:',   error) ;
+        console.error('Error:', error);
         alert('Ocurrió un error al procesar la solicitud. Por favor, intenta de nuevo.');
-
-
     }
-});*/
-document.getElementById('loginForm').addEventListener('submit', async function(event) {
-    event.preventDefault();
-    const nombre = document.getElementById('nombre').value.trim();
-    const correo = document.getElementById('correo').value.trim();
-    const clave = document.getElementById('clave').value.trim();
-
-    try {
-        const response = await fetch('base_de_datos.json');
-        if (!response.ok) throw new Error('Error al cargar el archivo JSON');
-        const data = await response.json();
-        const usuario = data.usuarios.find(user =>
-
-            user.nombre.toLowerCase() === nombre.toLowerCase() &&
-            user.correo.toLowerCase() === correo.toLowerCase() &&
-
-            user.PIN === clave
-        );
-
-        if (usuario) {
-
-
-            alert('¡Inicio de sesión exitoso! Bienvenido, ' + usuario.nombre);
-            localStorage.setItem("usuarioActual", JSON.stringify(usuario));
-            window.location.href = "tabla.html";
-        } else {
-
-            alert('Error: Nombre, correo o contraseña incorrectos.');
-        }
-    } catch (error) {
-
-        console.error('Error:',   error) ;
-        alert('Ocurrió un error al procesar la solicitud. Por favor, intenta de nuevo.');
-
-
-    }
 });
+
+window.addEventListener('load', checkLogin);
+
+function checkLogin() {
+    const token = sessionStorage.getItem('accessToken');
+    if (!token && window.location.pathname !== '/login.html') {
+        alert('Debes iniciar sesión para acceder a esta página.');
+        window.location.href = 'login.html';
+    }
+}
