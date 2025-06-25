@@ -50,7 +50,7 @@ window.addEventListener('load', checkLogin);
 
 function checkLogin() {
     const token = sessionStorage.getItem('accessToken');
-    if (!token && window.location.pathname !== '/login.html') {
+    if (!token && !window.location.pathname.endsWith('login.html')) {
         alert('Debes iniciar sesión para acceder a esta página.');
         window.location.href = 'login.html';
     }
