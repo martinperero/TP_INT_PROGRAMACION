@@ -15,12 +15,13 @@ function crearCatalogo() {
         .then(response => response.json())
         .then(data => {
             const catalogoContainer = document.getElementById("tarjetas_desktop");
-            if (!catalogoContainer) {
+            const catalogoContainerTablet = document.getElementById("tarjetas_tablet")
+            if (!catalogoContainer || !catalogoContainerTablet) {
                 console.error("No se encontró el contenedor del catálogo.");
                 return;
             }
             catalogoContainer.innerHTML = ''; // Limpia el contenedor antes de añadir
-
+            catalogoContainerTablet.innerHTML = '';
             let allSalones = data.salones; // Salones desde el JSON
             const salonesLocalStorage = JSON.parse(localStorage.getItem("salones")) || []; // Salones desde localStorage
 
@@ -42,11 +43,11 @@ function crearCatalogo() {
 
             uniqueSalones.forEach(salon => {
                 const card = document.createElement("div");
-                card.classList.add("card", "desktop", "d-flex", "flex-column", "color_card");
+                card.classList.add("card", "desktop", "tablet", "mobile", "d-flex", "flex-column", "color_card");
 
                 const img = document.createElement("img");
                 img.src = salon.portada || "imagen_default.jpg";
-                img.classList.add("card-img-top", "img_card");
+                img.classList.add("card-img-top", "img_card","img_tablet");
                 img.alt = salon.nombre || "Imagen de salón";
 
                 const cardBody = document.createElement("div");
@@ -76,6 +77,7 @@ function crearCatalogo() {
                 card.appendChild(cardBody);
 
                 catalogoContainer.appendChild(card);
+                catalogoContainerTablet.appendChild(card);
             });
 
             // Llama a capturarEvento() UNA SOLA VEZ, DESPUÉS de que todas las tarjetas se han añadido al DOM
