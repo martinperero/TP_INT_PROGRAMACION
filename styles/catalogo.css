@@ -5,6 +5,9 @@
     font-size: 1.25rem;
     color: rgb(0, 0, 0);
 }
+#imagen_salon{
+    max-width: 30rem;
+}
 #tarjetas_desktop {
     display: flex;
     flex-wrap: wrap;
