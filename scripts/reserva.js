@@ -28,8 +28,27 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const params = new URLSearchParams(window.location.search);
     const salonPreSeleccionado = params.get('salon');
+//Esta parte se modificó para que los datos se carguen desde el localStorage
+    const salonesLocal = JSON.parse(localStorage.getItem("salones") || "[]");
+    const serviciosLocal = JSON.parse(localStorage.getItem("servicios") || "[]");
+    salones = salonesLocal;
+    servicios = serviciosLocal;
+    salones.forEach(salon => {
+                const option = document.createElement('option');
+                option.value = salon.ID || salon.id_salon;
+                option.textContent = `${salon.nombre} - $${salon.precio}`;
+                if ((salonesLocal.ID || salon.id_salon) === salonPreSeleccionado) {
+                    option.selected = true;
+                    precioBase = parseInt(salon.precio);
+                    actualizarDetallesSalon(salon);
+                }
+                salonSelect.appendChild(option);
+            });
+            mostrarServicios(servicios);
+            actualizarTotal();
+//fin de codigo localStorage-------- a partir de la siguiente linea, esta el codigo original
 
-    fetch('base_de_datos.json')
+    /*fetch('base_de_datos.json')
         .then(res => res.json())
         .then(data => {
             salones = data.salones;
@@ -50,7 +69,7 @@ document.addEventListener('DOMContentLoaded', () => {
             mostrarServicios(servicios);
             actualizarTotal();
         })
-        .catch(error => console.error('Error al cargar los datos:', error));
+        .catch(error => console.error('Error al cargar los datos:', error)); **/ 
 
     fechaReserva.min = '2025-06-01';
 
