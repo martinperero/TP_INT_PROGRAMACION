@@ -46,9 +46,9 @@ document.addEventListener('DOMContentLoaded', () => {
             });
             mostrarServicios(servicios);
             actualizarTotal();
-//fin de codigo localStorage-------- a partir de la siguiente linea, esta el codigo original
 
-    /*fetch('base_de_datos.json')
+
+        fetch('base_de_datos.json')
         .then(res => res.json())
         .then(data => {
             salones = data.salones;
@@ -69,7 +69,7 @@ document.addEventListener('DOMContentLoaded', () => {
             mostrarServicios(servicios);
             actualizarTotal();
         })
-        .catch(error => console.error('Error al cargar los datos:', error)); **/ 
+        .catch(error => console.error('Error al cargar los datos:', error)); 
 
     fechaReserva.min = '2025-06-01';
 
@@ -184,27 +184,29 @@ document.addEventListener('DOMContentLoaded', () => {
         salonImage.src = imageUrl;
         salonImage.alt = salon.nombre;
 
-        carouselIndicators.innerHTML = '';
-        carouselInner.innerHTML = '';
-        if (salon.multimedia && salon.multimedia.length > 0) {
-            salon.multimedia.forEach((img, index) => {
-                const indicator = document.createElement('button');
-                indicator.type = 'button';
-                indicator.dataset.bsTarget = '#carouselExampleIndicators';
-                indicator.dataset.bsSlideTo = index;
-                if (index === 0) indicator.className = 'active';
-                indicator.setAttribute('aria-label', `Slide ${index + 1}`);
-                carouselIndicators.appendChild(indicator);
+        //CARRUSEL SUSPENDIDO XD
 
-                const carouselItem = document.createElement('div');
-                carouselItem.className = `carousel-item ${index === 0 ? 'active' : ''}`;
-                carouselItem.innerHTML = `<img src="${img.url}" class="d-block w-100" alt="${img.descripcion}">`;
-                carouselInner.appendChild(carouselItem);
-            });
-        } else {
-            carouselInner.innerHTML = '<div class="carousel-item active"><img src="https://via.placeholder.com/300" class="d-block w-100" alt="No hay imágenes disponibles"></div>';
-            carouselIndicators.innerHTML = '<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>';
-        }
+        // carouselIndicators.innerHTML = '';
+        // carouselInner.innerHTML = '';
+        // if (salon.multimedia && salon.multimedia.length > 0) { 
+        //     salon.multimedia.forEach((img, index) => {
+        //         const indicator = document.createElement('button');
+        //         indicator.type = 'button';
+        //         indicator.dataset.bsTarget = '#carouselExampleIndicators';
+        //         indicator.dataset.bsSlideTo = index;
+        //         if (index === 0) indicator.className = 'active';
+        //         indicator.setAttribute('aria-label', `Slide ${index + 1}`);
+        //         carouselIndicators.appendChild(indicator);
+
+        //         const carouselItem = document.createElement('div');
+        //         carouselItem.className = `carousel-item ${index === 0 ? 'active' : ''}`;
+        //         carouselItem.innerHTML = `<img src="${img.url}" class="d-block w-100" alt="${img.descripcion}">`;
+        //         carouselInner.appendChild(carouselItem);
+        //     });
+        // } else {
+        //     carouselInner.innerHTML = '<div class="carousel-item active"><img src="https://via.placeholder.com/300" class="d-block w-100" alt="No hay imágenes disponibles"></div>';
+        //     carouselIndicators.innerHTML = '<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>';
+        // }
     }
 
     function mostrarServicios(servicios) {
